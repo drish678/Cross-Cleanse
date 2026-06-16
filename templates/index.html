@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cross Cleanse — AI-Powered Skincare</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/css/style.css" />
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav class="nav" id="mainNav">
+  <div class="nav-inner">
+    <div class="logo" onclick="showSection('home')">
+      <span class="logo-mark">✦</span>
+      <span>Cross Cleanse</span>
+    </div>
+    <div class="nav-links">
+      <button class="nav-link" onclick="showSection('catalog')">Shop</button>
+      <button class="nav-link" onclick="showSection('quiz')">Skin Quiz</button>
+    </div>
+    <div class="nav-actions">
+      <button class="btn-outline btn-sm" onclick="openAccountModal()">Sign In</button>
+      <button class="cart-btn" onclick="openCart()" title="Cart">
+        <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        <span class="cart-count hidden" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════
+     HOME
+══════════════════════════════════════ -->
+<section id="section-home" class="section active">
+
+  <!-- Hero -->
+  <div class="hero-wrap">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="powered-pill">
+        <span class="ai-dot"></span>
+        Powered by AI
+      </div>
+      <h1 class="hero-title">Skincare that actually<br /><em>knows your skin</em></h1>
+      <p class="hero-sub">
+        Answer 8 questions. Our AI builds a personalized AM + PM routine,
+        flags ingredient conflicts, and recommends products matched to your exact profile — not generic picks.
+      </p>
+      <div class="hero-ctas">
+        <button class="btn-primary btn-large" onclick="showSection('quiz')">Take the Skin Quiz →</button>
+        <button class="btn-glass" onclick="showSection('catalog')">Browse Products</button>
+      </div>
+      <p class="hero-note">Free to use · No credit card required · Takes under 3 minutes</p>
+    </div>
+  </div>
+
+  <!-- Trust strip -->
+  <div class="trust-strip reveal">
+    <div class="trust-item"><span class="trust-num">60+</span><span class="trust-label">Curated Products</span></div>
+    <div class="trust-divider"></div>
+    <div class="trust-item"><span class="trust-num">4</span><span class="trust-label">AI Layers</span></div>
+    <div class="trust-divider"></div>
+    <div class="trust-item"><span class="trust-num">100%</span><span class="trust-label">Personalized</span></div>
+    <div class="trust-divider"></div>
+    <div class="trust-item"><span class="trust-num">Free</span><span class="trust-label">Skin Quiz</span></div>
+  </div>
+
+  <!-- AI Explanation -->
+  <div class="ai-section">
+    <div class="ai-section-inner">
+      <div class="ai-label-pill reveal">How the AI works</div>
+      <h2 class="section-title reveal">Four layers of intelligence<br />working together for your skin</h2>
+      <p class="section-sub reveal">Most skincare apps just show you a list of products. Cross Cleanse understands your skin, sequences a full routine, and catches dangerous ingredient combinations before they damage your skin barrier.</p>
+
+      <div class="ai-grid stagger">
+        <div class="ai-card">
+          <div class="ai-card-num">01</div>
+          <div class="ai-card-icon">📋</div>
+          <h3>Profile Builder</h3>
+          <p>Understands your skin type, concerns, lifestyle, and sensitivities through a focused 8-question quiz — no lengthy intake form required.</p>
+          <div class="ai-card-tag">Onboarding Quiz</div>
+        </div>
+        <div class="ai-card">
+          <div class="ai-card-num">02</div>
+          <div class="ai-card-icon">🧴</div>
+          <h3>Catalog Recommender</h3>
+          <p>Matches products from a curated database to your profile using ingredient analysis and concern scoring — never generic top-10 lists.</p>
+          <div class="ai-card-tag">Ingredient Matching</div>
+        </div>
+        <div class="ai-card ai-card-highlight">
+          <div class="ai-card-num">03</div>
+          <div class="ai-card-icon">⚠️</div>
+          <h3>Conflict Detector</h3>
+          <p>Flags ingredient combinations you should never use together — like retinol + AHA/BHA on the same night — before they wreck your skin barrier.</p>
+          <div class="ai-card-tag">The Real Differentiator</div>
+        </div>
+        <div class="ai-card">
+          <div class="ai-card-num">04</div>
+          <div class="ai-card-icon">🌅</div>
+          <h3>Routine Generator</h3>
+          <p>Sequences your products into a clear AM + PM routine with a one-sentence explanation for each pick, so you always know the why.</p>
+          <div class="ai-card-tag">Full Routine Output</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Powered by AI Statement -->
+  <div class="ai-statement-section">
+    <div class="ai-statement-inner">
+      <div class="ai-statement-badge reveal">
+        <span class="ai-spark">✦</span>
+        AI-Powered Recommendation Engine
+        <span class="ai-spark">✦</span>
+      </div>
+      <h2 class="ai-statement-title reveal">This isn't a quiz that leads to a product grid.</h2>
+      <p class="ai-statement-body reveal">
+        Cross Cleanse runs a content-based recommendation engine trained on thousands of ingredient combinations.
+        Every routine is sequenced in the correct application order, every product comes with a personalized reason,
+        and every recommendation is cross-checked for ingredient conflicts — automatically.
+      </p>
+      <div class="ai-proof-grid stagger">
+        <div class="ai-proof-item">
+          <div class="ai-proof-icon">🔬</div>
+          <strong>Ingredient Analysis</strong>
+          <span>Products scored against your profile using cosine similarity on ingredient profiles</span>
+        </div>
+        <div class="ai-proof-item">
+          <div class="ai-proof-icon">🛡️</div>
+          <strong>Conflict Protection</strong>
+          <span>4 conflict rule sets covering retinoids, acids, vitamin C, and benzoyl peroxide interactions</span>
+        </div>
+        <div class="ai-proof-item">
+          <div class="ai-proof-icon">🎯</div>
+          <strong>Concern Matching</strong>
+          <span>Prioritizes products targeting your top 3 concerns, weighted by your skin type and budget</span>
+        </div>
+        <div class="ai-proof-item">
+          <div class="ai-proof-icon">📅</div>
+          <strong>Routine Sequencing</strong>
+          <span>Correct application order: cleanse → tone → treat → eye → moisturise → protect</span>
+        </div>
+      </div>
+      <button class="btn-primary btn-large" onclick="showSection('quiz')">Get Your AI Routine →</button>
+    </div>
+  </div>
+
+  <!-- How It Works Steps -->
+  <div class="how-section">
+    <div class="how-section-inner">
+      <h2 class="section-title reveal">From quiz to routine in 3 minutes</h2>
+      <div class="how-steps stagger">
+        <div class="how-step">
+          <div class="how-step-num">1</div>
+          <div class="how-step-body">
+            <h3>Take the Skin Quiz</h3>
+            <p>8 questions about your skin type, top concerns, budget, and sensitivities. Free, no account needed.</p>
+          </div>
+        </div>
+        <div class="how-step-arrow">→</div>
+        <div class="how-step">
+          <div class="how-step-num">2</div>
+          <div class="how-step-body">
+            <h3>Get Your Routine</h3>
+            <p>AI builds your personalized AM + PM routine with conflict warnings and a "why" for every product.</p>
+          </div>
+        </div>
+        <div class="how-step-arrow">→</div>
+        <div class="how-step">
+          <div class="how-step-num">3</div>
+          <div class="how-step-body">
+            <h3>Add to Cart & Shop</h3>
+            <p>Add recommended products directly to your cart and checkout in one step — all on a single page.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional Intake Note -->
+  <div class="intake-teaser reveal">
+    <div class="intake-teaser-inner">
+      <div class="intake-tag">Optional · Non-intrusive</div>
+      <h3>Want hyper-personalized results?</h3>
+      <p>After creating a free account, you can complete an optional skin profile essay. It helps our AI narrow results further — things like your climate, water type, and lifestyle that a quiz can't fully capture. Completely optional, takes 2 minutes, and you can skip it anytime.</p>
+    </div>
+  </div>
+
+  <!-- Featured Products strip -->
+  <div class="featured-section">
+    <div class="featured-inner">
+      <div class="featured-header reveal">
+        <h2 class="section-title" style="margin-bottom:4px">Featured Products</h2>
+        <button class="btn-link" onclick="showSection('catalog')">View all products →</button>
+      </div>
+      <div class="featured-grid stagger" id="featured-grid"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="logo" style="margin-bottom:8px">
+        <span class="logo-mark">✦</span><span>Cross Cleanse</span>
+      </div>
+      <p>AI-powered skincare routines built for real people.</p>
+      <p class="footer-small">© 2026 Cross Cleanse · Free to use · Privacy-first</p>
+    </div>
+  </footer>
+
+</section>
+
+<!-- ══════════════════════════════════════
+     QUIZ
+══════════════════════════════════════ -->
+<section id="section-quiz" class="section">
+  <div class="quiz-container">
+    <div class="quiz-header">
+      <button class="btn-ghost" onclick="showSection('home')">← Back</button>
+      <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+      <span class="progress-label" id="progressLabel">1 of 6</span>
+    </div>
+
+    <!-- Step 1 -->
+    <div class="quiz-step active" id="step-1">
+      <div class="step-emoji">🪞</div>
+      <h2 class="quiz-question">What's your skin type?</h2>
+      <p class="quiz-hint">Select up to 3 that apply — skin can be multiple things at once.</p>
+      <div class="option-grid multi">
+        <button class="option-card" data-field="skin_types" data-value="dry" onclick="toggleSkinType(this)">
+          <span class="option-icon">🏜️</span><strong>Dry</strong><small>Tight, flaky, or rough. Always needs moisture.</small>
+        </button>
+        <button class="option-card" data-field="skin_types" data-value="oily" onclick="toggleSkinType(this)">
+          <span class="option-icon">✨</span><strong>Oily</strong><small>Shiny all over. Prone to breakouts.</small>
+        </button>
+        <button class="option-card" data-field="skin_types" data-value="combination" onclick="toggleSkinType(this)">
+          <span class="option-icon">☯️</span><strong>Combination</strong><small>Oily T-zone, dry or normal cheeks.</small>
+        </button>
+        <button class="option-card" data-field="skin_types" data-value="normal" onclick="toggleSkinType(this)">
+          <span class="option-icon">🌸</span><strong>Normal</strong><small>Balanced — not too oily, not too dry.</small>
+        </button>
+        <button class="option-card" data-field="skin_types" data-value="sensitive" onclick="toggleSkinType(this)">
+          <span class="option-icon">🌷</span><strong>Sensitive</strong><small>Reacts easily — redness, stinging, itching.</small>
+        </button>
+      </div>
+      <button class="btn-primary step-next" onclick="nextStep(1)">Continue →</button>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="quiz-step" id="step-2">
+      <div class="step-emoji">🎯</div>
+      <h2 class="quiz-question">What are your main skin concerns?</h2>
+      <p class="quiz-hint">Pick up to 3. We'll prioritize these when building your routine.</p>
+      <div class="option-grid multi">
+        <button class="option-card" data-field="concerns" data-value="acne" onclick="toggleOption(this)"><span class="option-icon">🔴</span><strong>Acne & Blemishes</strong><small>Active breakouts or blemish-prone skin.</small></button>
+        <button class="option-card" data-field="concerns" data-value="aging" onclick="toggleOption(this)"><span class="option-icon">⏳</span><strong>Anti-Aging</strong><small>Fine lines, wrinkles, loss of firmness.</small></button>
+        <button class="option-card" data-field="concerns" data-value="hyperpigmentation" onclick="toggleOption(this)"><span class="option-icon">🎨</span><strong>Dark Spots</strong><small>Hyperpigmentation, melasma, uneven tone.</small></button>
+        <button class="option-card" data-field="concerns" data-value="dryness" onclick="toggleOption(this)"><span class="option-icon">💧</span><strong>Dryness</strong><small>Tight feeling, flaking, or dull plumpness.</small></button>
+        <button class="option-card" data-field="concerns" data-value="redness" onclick="toggleOption(this)"><span class="option-icon">🌹</span><strong>Redness</strong><small>Flushing, rosacea, or reactive skin.</small></button>
+        <button class="option-card" data-field="concerns" data-value="pores" onclick="toggleOption(this)"><span class="option-icon">🔬</span><strong>Large Pores</strong><small>Visible pores, especially nose and cheeks.</small></button>
+        <button class="option-card" data-field="concerns" data-value="dullness" onclick="toggleOption(this)"><span class="option-icon">💡</span><strong>Dullness</strong><small>Lack of glow or rough, tired-looking skin.</small></button>
+        <button class="option-card" data-field="concerns" data-value="dark circles" onclick="toggleOption(this)"><span class="option-icon">👁️</span><strong>Dark Circles</strong><small>Under-eye darkness or puffiness.</small></button>
+      </div>
+      <button class="btn-primary step-next" onclick="nextStep(2)">Continue →</button>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="quiz-step" id="step-3">
+      <div class="step-emoji">💚</div>
+      <h2 class="quiz-question">What's your skincare budget?</h2>
+      <p class="quiz-hint">Great skin doesn't have to be expensive — we have options across all ranges.</p>
+      <div class="option-grid">
+        <button class="option-card" data-field="budget" data-value="budget" onclick="selectOption(this)">
+          <span class="option-icon">🌱</span><strong>Budget-Friendly</strong><small>Under $20/product. CeraVe, The Ordinary, The Inkey List.</small>
+        </button>
+        <button class="option-card" data-field="budget" data-value="mid" onclick="selectOption(this)">
+          <span class="option-icon">🌿</span><strong>Mid-Range</strong><small>$20–$60/product. Paula's Choice, Cosrx, Pixi.</small>
+        </button>
+        <button class="option-card" data-field="budget" data-value="luxury" onclick="selectOption(this)">
+          <span class="option-icon">🌳</span><strong>Luxury</strong><small>$60+/product. Skinceuticals, Estée Lauder, Elemis.</small>
+        </button>
+      </div>
+      <button class="btn-primary step-next" onclick="nextStep(3)">Continue →</button>
+    </div>
+
+    <!-- Step 4 -->
+    <div class="quiz-step" id="step-4">
+      <div class="step-emoji">🛡️</div>
+      <h2 class="quiz-question">Any ingredient preferences?</h2>
+      <p class="quiz-hint">We'll filter out products that don't meet your requirements.</p>
+      <div class="option-grid multi">
+        <button class="option-card" data-field="sensitivities" data-value="fragrance_free" onclick="toggleOption(this)">
+          <span class="option-icon">🚫</span><strong>Fragrance-Free</strong><small>Avoid all added fragrances and essential oils.</small>
+        </button>
+        <button class="option-card" data-field="sensitivities" data-value="alcohol_free" onclick="toggleOption(this)">
+          <span class="option-icon">❌</span><strong>Alcohol-Free</strong><small>Avoid drying alcohols (denatured, SD alcohol).</small>
+        </button>
+        <button class="option-card selected" data-field="sensitivities" data-value="none" onclick="selectSensitivity(this)" id="sensitivityNone">
+          <span class="option-icon">✅</span><strong>No restrictions</strong><small>I tolerate most ingredients well.</small>
+        </button>
+      </div>
+      <button class="btn-primary step-next" onclick="nextStep(4)">Continue →</button>
+    </div>
+
+    <!-- Step 5 -->
+    <div class="quiz-step" id="step-5">
+      <div class="step-emoji">📚</div>
+      <h2 class="quiz-question">How experienced are you with skincare?</h2>
+      <p class="quiz-hint">This helps us calibrate ingredient strength and routine complexity.</p>
+      <div class="option-grid">
+        <button class="option-card" data-field="experience" data-value="beginner" onclick="selectOption(this)">
+          <span class="option-icon">🌱</span><strong>Beginner</strong><small>New to skincare — I want simple, foolproof routines.</small>
+        </button>
+        <button class="option-card" data-field="experience" data-value="intermediate" onclick="selectOption(this)">
+          <span class="option-icon">🌿</span><strong>Some experience</strong><small>I have a basic routine and am ready to add actives.</small>
+        </button>
+        <button class="option-card" data-field="experience" data-value="advanced" onclick="selectOption(this)">
+          <span class="option-icon">🌳</span><strong>Experienced</strong><small>I know my ingredients and want targeted recommendations.</small>
+        </button>
+      </div>
+      <button class="btn-primary step-next" onclick="nextStep(5)">Continue →</button>
+    </div>
+
+    <!-- Step 6 -->
+    <div class="quiz-step" id="step-6">
+      <div class="step-emoji">🔍</div>
+      <h2 class="quiz-question">Do you currently use any actives?</h2>
+      <p class="quiz-hint">We'll use this for conflict detection — flagging combinations you should avoid.</p>
+      <div class="option-grid multi">
+        <button class="option-card" data-field="existing_actives" data-value="retinol" onclick="toggleOption(this)"><span class="option-icon">🔴</span><strong>Retinol / Retinoids</strong><small>Any vitamin A derivative.</small></button>
+        <button class="option-card" data-field="existing_actives" data-value="vitamin_c" onclick="toggleOption(this)"><span class="option-icon">🟡</span><strong>Vitamin C</strong><small>Ascorbic acid or C derivatives.</small></button>
+        <button class="option-card" data-field="existing_actives" data-value="aha_bha" onclick="toggleOption(this)"><span class="option-icon">🟠</span><strong>AHAs or BHAs</strong><small>Glycolic, lactic, mandelic, or salicylic acid.</small></button>
+        <button class="option-card" data-field="existing_actives" data-value="benzoyl_peroxide" onclick="toggleOption(this)"><span class="option-icon">⚪</span><strong>Benzoyl Peroxide</strong><small>Common in acne treatments.</small></button>
+        <button class="option-card" data-field="existing_actives" data-value="none_actives" onclick="toggleOption(this)"><span class="option-icon">✅</span><strong>None yet</strong><small>I haven't added actives to my routine.</small></button>
+      </div>
+      <button class="btn-primary" onclick="submitQuiz()">Build My AI Routine ✦</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     RESULTS
+══════════════════════════════════════ -->
+<section id="section-results" class="section">
+  <div class="results-container">
+    <div class="results-header">
+      <button class="btn-ghost" onclick="showSection('quiz')">← Retake</button>
+      <div>
+        <div class="powered-pill powered-pill-sm" style="margin-bottom:8px"><span class="ai-dot"></span> AI-Generated Routine</div>
+        <h1 class="results-title">Your Personalized Routine</h1>
+        <p class="results-sub" id="results-sub"></p>
+      </div>
+      <button class="btn-outline btn-sm" onclick="openAccountModal()">Save Routine</button>
+    </div>
+
+    <div id="conflicts-section" class="conflicts-section hidden"></div>
+
+    <div class="routine-tabs">
+      <button class="tab-btn active" id="tab-btn-am" onclick="showTab('am', this)">🌅 Morning</button>
+      <button class="tab-btn" id="tab-btn-pm" onclick="showTab('pm', this)">🌙 Evening</button>
+      <button class="tab-btn" id="tab-btn-weekly" onclick="showTab('weekly', this)">📅 Weekly</button>
+    </div>
+
+    <div id="tab-am" class="tab-content active">
+      <div class="routine-intro">Apply every <strong>morning</strong> in this exact order. Finish with SPF — always.</div>
+      <div class="routine-list" id="am-list"></div>
+    </div>
+    <div id="tab-pm" class="tab-content">
+      <div class="routine-intro">Apply every <strong>evening</strong>. Let each layer absorb 60 seconds before the next.</div>
+      <div class="routine-list" id="pm-list"></div>
+    </div>
+    <div id="tab-weekly" class="tab-content">
+      <div class="routine-intro">Use <strong>1–2× per week</strong>. Don't layer with actives on the same night.</div>
+      <div class="routine-list" id="weekly-list"></div>
+    </div>
+
+    <div class="cart-cta-bar" id="cartCtaBar" style="display:none">
+      <span id="cartCtaText">0 products in cart</span>
+      <button class="btn-primary" onclick="openCart()">Review Cart & Checkout →</button>
+    </div>
+
+    <div class="confidence-card">
+      <div class="confidence-icon">💬</div>
+      <h3>Feel confident about your routine?</h3>
+      <p>Rate how confident you feel — this helps us improve the AI recommendations.</p>
+      <div class="confidence-rating">
+        <div class="stars" id="confidence-stars">
+          <span class="star" onclick="rateStar(1)">★</span>
+          <span class="star" onclick="rateStar(2)">★</span>
+          <span class="star" onclick="rateStar(3)">★</span>
+          <span class="star" onclick="rateStar(4)">★</span>
+          <span class="star" onclick="rateStar(5)">★</span>
+        </div>
+        <span id="star-label"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CATALOG
+══════════════════════════════════════ -->
+<section id="section-catalog" class="section">
+  <div class="catalog-container">
+    <div class="catalog-header">
+      <div>
+        <h1 class="page-title">Shop All Products</h1>
+        <p class="page-sub">Curated, AI-matched skincare across every routine step</p>
+      </div>
+      <button class="btn-primary btn-sm" onclick="showSection('quiz')">Get AI Recommendations</button>
+    </div>
+
+    <div class="catalog-layout">
+      <!-- Filters sidebar -->
+      <aside class="filters-sidebar">
+        <div class="filter-header">
+          <h3>Filter</h3>
+          <button class="btn-link" onclick="clearFilters()">Clear all</button>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-label">Skin Type</div>
+          <div class="filter-chips" id="filter-skin">
+            <button class="chip" data-filter="skin" data-value="dry" onclick="toggleFilter(this)">Dry</button>
+            <button class="chip" data-filter="skin" data-value="oily" onclick="toggleFilter(this)">Oily</button>
+            <button class="chip" data-filter="skin" data-value="combination" onclick="toggleFilter(this)">Combination</button>
+            <button class="chip" data-filter="skin" data-value="normal" onclick="toggleFilter(this)">Normal</button>
+            <button class="chip" data-filter="skin" data-value="sensitive" onclick="toggleFilter(this)">Sensitive</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-label">Product Type</div>
+          <div class="filter-chips" id="filter-type">
+            <button class="chip" data-filter="type" data-value="Cleanser" onclick="toggleFilter(this)">Cleanser</button>
+            <button class="chip" data-filter="type" data-value="Toner" onclick="toggleFilter(this)">Toner</button>
+            <button class="chip" data-filter="type" data-value="Serum" onclick="toggleFilter(this)">Serum</button>
+            <button class="chip" data-filter="type" data-value="Moisturiser" onclick="toggleFilter(this)">Moisturiser</button>
+            <button class="chip" data-filter="type" data-value="SPF" onclick="toggleFilter(this)">SPF</button>
+            <button class="chip" data-filter="type" data-value="Eye Care" onclick="toggleFilter(this)">Eye Care</button>
+            <button class="chip" data-filter="type" data-value="Oil" onclick="toggleFilter(this)">Oil</button>
+            <button class="chip" data-filter="type" data-value="Mask" onclick="toggleFilter(this)">Mask</button>
+            <button class="chip" data-filter="type" data-value="Exfoliator" onclick="toggleFilter(this)">Exfoliator</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-label">Price Range</div>
+          <div class="filter-chips" id="filter-price">
+            <button class="chip" data-filter="price" data-value="budget" onclick="toggleFilter(this)">Under $20</button>
+            <button class="chip" data-filter="price" data-value="mid" onclick="toggleFilter(this)">$20–$60</button>
+            <button class="chip" data-filter="price" data-value="luxury" onclick="toggleFilter(this)">$60+</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-label">Concern</div>
+          <div class="filter-chips" id="filter-concern">
+            <button class="chip" data-filter="concern" data-value="acne" onclick="toggleFilter(this)">Acne</button>
+            <button class="chip" data-filter="concern" data-value="aging" onclick="toggleFilter(this)">Aging</button>
+            <button class="chip" data-filter="concern" data-value="hyperpigmentation" onclick="toggleFilter(this)">Dark Spots</button>
+            <button class="chip" data-filter="concern" data-value="dryness" onclick="toggleFilter(this)">Dryness</button>
+            <button class="chip" data-filter="concern" data-value="redness" onclick="toggleFilter(this)">Redness</button>
+            <button class="chip" data-filter="concern" data-value="pores" onclick="toggleFilter(this)">Pores</button>
+            <button class="chip" data-filter="concern" data-value="dullness" onclick="toggleFilter(this)">Dullness</button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <div class="filter-label">Preferences</div>
+          <div class="filter-chips" id="filter-pref">
+            <button class="chip" data-filter="pref" data-value="fragrance_free" onclick="toggleFilter(this)">Fragrance-Free</button>
+            <button class="chip" data-filter="pref" data-value="alcohol_free" onclick="toggleFilter(this)">Alcohol-Free</button>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Product grid -->
+      <div class="catalog-main">
+        <div class="catalog-toolbar">
+          <span class="results-count" id="resultsCount">60 products</span>
+          <div class="sort-wrap">
+            <label for="sortSelect">Sort by</label>
+            <select id="sortSelect" onchange="applyCatalogFilters()">
+              <option value="default">Recommended</option>
+              <option value="price-asc">Price: Low to High</option>
+              <option value="price-desc">Price: High to Low</option>
+              <option value="name">Name A–Z</option>
+            </select>
+          </div>
+        </div>
+        <div class="catalog-grid" id="catalog-grid"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     CART SIDEBAR
+══════════════════════════════════════ -->
+<div class="cart-overlay hidden" id="cartOverlay" onclick="closeCart()"></div>
+<div class="cart-sidebar" id="cartSidebar">
+  <div class="cart-sidebar-header">
+    <h2>Your Cart</h2>
+    <button class="cart-close" onclick="closeCart()">✕</button>
+  </div>
+  <div class="cart-sidebar-body" id="cartSidebarBody"></div>
+  <div class="cart-sidebar-footer" id="cartSidebarFooter"></div>
+</div>
+
+<!-- ══════════════════════════════════════
+     CHECKOUT PAGE
+══════════════════════════════════════ -->
+<section id="section-checkout" class="section">
+  <div class="checkout-container">
+    <div class="checkout-header">
+      <button class="btn-ghost" onclick="closeCheckout()">← Back to Cart</button>
+      <h1 class="page-title">Checkout</h1>
+      <div class="powered-pill powered-pill-sm"><span class="ai-dot"></span> Secure Checkout</div>
+    </div>
+
+    <div class="checkout-layout">
+      <!-- Form (all on one page) -->
+      <div class="checkout-form-wrap">
+        <div class="checkout-section-label">Contact & Account</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Email address</label>
+            <input type="email" id="co-email" placeholder="you@example.com" />
+          </div>
+        </div>
+        <div class="form-row two-col">
+          <div class="form-group">
+            <label>First name</label>
+            <input type="text" id="co-first" placeholder="Jane" />
+          </div>
+          <div class="form-group">
+            <label>Last name</label>
+            <input type="text" id="co-last" placeholder="Doe" />
+          </div>
+        </div>
+        <div class="checkout-section-label" style="margin-top:24px">Shipping Address</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Street address</label>
+            <input type="text" id="co-street" placeholder="123 Main Street" />
+          </div>
+        </div>
+        <div class="form-row two-col">
+          <div class="form-group">
+            <label>City</label>
+            <input type="text" id="co-city" placeholder="New York" />
+          </div>
+          <div class="form-group">
+            <label>State</label>
+            <input type="text" id="co-state" placeholder="NY" />
+          </div>
+        </div>
+        <div class="form-row two-col">
+          <div class="form-group">
+            <label>ZIP code</label>
+            <input type="text" id="co-zip" placeholder="10001" />
+          </div>
+          <div class="form-group">
+            <label>Country</label>
+            <select id="co-country">
+              <option>United States</option>
+              <option>Canada</option>
+              <option>United Kingdom</option>
+              <option>Australia</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="checkout-section-label" style="margin-top:24px">Payment</div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Card number</label>
+            <input type="text" id="co-card" placeholder="1234 5678 9012 3456" maxlength="19" oninput="formatCard(this)" />
+          </div>
+        </div>
+        <div class="form-row two-col">
+          <div class="form-group">
+            <label>Expiry</label>
+            <input type="text" id="co-expiry" placeholder="MM / YY" maxlength="7" oninput="formatExpiry(this)" />
+          </div>
+          <div class="form-group">
+            <label>CVV</label>
+            <input type="text" id="co-cvv" placeholder="123" maxlength="4" />
+          </div>
+        </div>
+
+        <div class="checkout-note">
+          <span>🔒</span> This is a demo — no real payment is processed. Your info stays private.
+        </div>
+        <button class="btn-primary btn-full" onclick="placeOrder()">Place Order →</button>
+      </div>
+
+      <!-- Order summary -->
+      <div class="order-summary" id="orderSummary"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     ORDER CONFIRMATION
+══════════════════════════════════════ -->
+<section id="section-confirmation" class="section">
+  <div class="confirmation-wrap">
+    <div class="confirmation-icon">✦</div>
+    <h1 class="confirmation-title">Order Placed!</h1>
+    <p class="confirmation-sub">Thank you — your skincare is on its way.</p>
+    <div class="confirmation-detail" id="confirmation-detail"></div>
+    <div class="confirmation-actions">
+      <button class="btn-primary" onclick="showSection('home')">Back to Home</button>
+      <button class="btn-outline" onclick="showSection('quiz')">Retake Quiz</button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════
+     ACCOUNT MODAL
+══════════════════════════════════════ -->
+<div class="modal-overlay hidden" id="accountOverlay" onclick="closeAccountModal()">
+  <div class="modal" onclick="event.stopPropagation()">
+    <button class="modal-close" onclick="closeAccountModal()">✕</button>
+    <div class="modal-icon">✦</div>
+    <h2 class="modal-title">Create your free account</h2>
+    <p class="modal-sub">Save your routine, track your skin journey, and unlock deeper personalization.</p>
+    <div class="form-group" style="margin-bottom:14px">
+      <label>Email address</label>
+      <input type="email" id="account-email" placeholder="you@example.com" />
+    </div>
+    <div class="form-row two-col" style="margin-bottom:14px">
+      <div class="form-group">
+        <label>First name</label>
+        <input type="text" id="account-first" placeholder="Jane" />
+      </div>
+      <div class="form-group">
+        <label>Last name</label>
+        <input type="text" id="account-last" placeholder="Doe" />
+      </div>
+    </div>
+    <button class="btn-primary btn-full" onclick="createAccount()">Create Free Account</button>
+    <p class="modal-terms">Free forever · No credit card · Unsubscribe anytime</p>
+
+    <!-- Optional intake -->
+    <div class="intake-optional hidden" id="intakeOptional">
+      <div class="intake-divider"><span>Optional — Skip anytime</span></div>
+      <h3 class="intake-title">Help the AI know you better</h3>
+      <p class="intake-desc">These questions are <strong>completely optional</strong> and non-intrusive. They help us narrow results beyond what the quiz can capture — think climate, lifestyle, skin history. You can skip this entirely and still get great recommendations.</p>
+      <div class="form-group" style="margin-bottom:12px">
+        <label>What's your climate like? <span class="optional-tag">optional</span></label>
+        <select id="intake-climate">
+          <option value="">Skip this question</option>
+          <option>Humid</option>
+          <option>Dry</option>
+          <option>Cold</option>
+          <option>Hot & sunny</option>
+          <option>Temperate / mixed</option>
+        </select>
+      </div>
+      <div class="form-group" style="margin-bottom:12px">
+        <label>Anything else about your skin history? <span class="optional-tag">optional</span></label>
+        <textarea id="intake-essay" placeholder="e.g. I had cystic acne in my 20s and my skin is now calmer but prone to dryness in winter…" rows="3"></textarea>
+      </div>
+      <div class="intake-actions">
+        <button class="btn-link" onclick="closeAccountModal()">Skip for now</button>
+        <button class="btn-primary btn-sm" onclick="saveIntake()">Save Profile</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- LOADING -->
+<div id="loading-overlay" class="loading-overlay hidden">
+  <div class="loading-card">
+    <div class="loading-spinner"></div>
+    <p class="loading-text" id="loading-text">Analyzing your skin profile…</p>
+  </div>
+</div>
+
+<script src="/static/js/app.js"></script>
+</body>
+</html>

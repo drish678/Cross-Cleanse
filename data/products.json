@@ -1,0 +1,2147 @@
+[
+  {
+    "id": 1,
+    "name": "CeraVe Hydrating Facial Cleanser",
+    "brand": "CeraVe",
+    "type": "Cleanser",
+    "step": 1,
+    "price": 14.99,
+    "price_tier": "budget",
+    "skin_types": [
+      "dry",
+      "normal",
+      "sensitive"
+    ],
+    "concerns": [
+      "dryness",
+      "redness",
+      "sensitive"
+    ],
+    "key_ingredients": [
+      "Ceramides",
+      "Hyaluronic Acid",
+      "Niacinamide"
+    ],
+    "ingredients": [
+      "ceramide np",
+      "ceramide ap",
+      "ceramide eop",
+      "hyaluronic acid",
+      "niacinamide",
+      "glycerin",
+      "cholesterol"
+    ],
+    "description": "Gentle, non-foaming cleanser that maintains the skin's natural moisture barrier.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.cerave.com"
+  },
+  {
+    "id": 2,
+    "name": "La Roche-Posay Toleriane Hydrating Gentle Cleanser",
+    "brand": "La Roche-Posay",
+    "type": "Cleanser",
+    "step": 1,
+    "price": 17.99,
+    "price_tier": "budget",
+    "skin_types": [
+      "dry",
+      "sensitive",
+      "normal"
+    ],
+    "concerns": [
+      "redness",
+      "sensitive",
+      "dryness"
+    ],
+    "key_ingredients": [
+      "Niacinamide",
+      "Ceramides",
+      "Glycerin"
+    ],
+    "ingredients": [
+      "niacinamide",
+      "ceramide np",
+      "glycerin",
+      "sodium hyaluronate",
+      "thermal spring water"
+    ],
+    "description": "Soothing gel-to-milk cleanser ideal for reactive, sensitive skin.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.laroche-posay.com"
+  },
+  {
+    "id": 3,
+    "name": "Paula's Choice CLEAR Pore Normalizing Cleanser",
+    "brand": "Paula's Choice",
+    "type": "Cleanser",
+    "step": 1,
+    "price": 21.0,
+    "price_tier": "mid",
+    "skin_types": [
+      "oily",
+      "combination",
+      "acne-prone"
+    ],
+    "concerns": [
+      "acne",
+      "pores",
+      "oiliness"
+    ],
+    "key_ingredients": [
+      "Salicylic Acid",
+      "Glycerin"
+    ],
+    "ingredients": [
+      "salicylic acid",
+      "glycerin",
+      "sodium cocoyl isethionate"
+    ],
+    "description": "Gentle foaming cleanser with salicylic acid to keep pores clear.",
+    "fragrance_free": true,
+    "alcohol_free": false,
+    "am": true,
+    "pm": true,
+    "url": "https://www.paulaschoice.com"
+  },
+  {
+    "id": 4,
+    "name": "Dermalogica Special Cleansing Gel",
+    "brand": "Dermalogica",
+    "type": "Cleanser",
+    "step": 1,
+    "price": 42.0,
+    "price_tier": "luxury",
+    "skin_types": [
+      "normal",
+      "combination",
+      "oily"
+    ],
+    "concerns": [
+      "dullness",
+      "oiliness"
+    ],
+    "key_ingredients": [
+      "Lavender",
+      "Balm Mint",
+      "Chamomile"
+    ],
+    "ingredients": [
+      "lavender extract",
+      "balm mint extract",
+      "chamomile extract",
+      "sodium laureth sulfate"
+    ],
+    "description": "Soap-free foaming cleanser that thoroughly but gently cleans the skin.",
+    "fragrance_free": false,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.dermalogica.com"
+  },
+  {
+    "id": 5,
+    "name": "The Inkey List Oat Cleansing Balm",
+    "brand": "The Inkey List",
+    "type": "Cleanser",
+    "step": 1,
+    "price": 12.99,
+    "price_tier": "budget",
+    "skin_types": [
+      "dry",
+      "sensitive",
+      "normal"
+    ],
+    "concerns": [
+      "dryness",
+      "sensitive",
+      "redness"
+    ],
+    "key_ingredients": [
+      "Oat Extract",
+      "Shea Butter",
+      "Ceramides"
+    ],
+    "ingredients": [
+      "oat extract",
+      "shea butter",
+      "ceramide np",
+      "glycerin",
+      "capric triglyceride"
+    ],
+    "description": "Nourishing cleansing balm that melts away makeup while soothing the skin.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": false,
+    "pm": true,
+    "url": "https://www.theinkeylist.com"
+  },
+  {
+    "id": 6,
+    "name": "Paula's Choice Skin Perfecting 2% BHA Liquid Exfoliant",
+    "brand": "Paula's Choice",
+    "type": "Toner",
+    "step": 2,
+    "price": 37.0,
+    "price_tier": "mid",
+    "skin_types": [
+      "oily",
+      "combination",
+      "acne-prone"
+    ],
+    "concerns": [
+      "acne",
+      "pores",
+      "blackheads",
+      "oiliness"
+    ],
+    "key_ingredients": [
+      "Salicylic Acid 2%",
+      "Green Tea"
+    ],
+    "ingredients": [
+      "salicylic acid",
+      "methylpropanediol",
+      "butylene glycol",
+      "green tea extract"
+    ],
+    "description": "Iconic leave-on exfoliant that unclogs pores and smooths skin texture.",
+    "fragrance_free": true,
+    "alcohol_free": false,
+    "am": false,
+    "pm": true,
+    "url": "https://www.paulaschoice.com"
+  },
+  {
+    "id": 7,
+    "name": "Pixi Glow Tonic",
+    "brand": "Pixi",
+    "type": "Toner",
+    "step": 2,
+    "price": 35.0,
+    "price_tier": "mid",
+    "skin_types": [
+      "normal",
+      "combination",
+      "dry"
+    ],
+    "concerns": [
+      "dullness",
+      "hyperpigmentation",
+      "uneven texture"
+    ],
+    "key_ingredients": [
+      "Glycolic Acid 5%",
+      "Aloe Vera",
+      "Ginseng"
+    ],
+    "ingredients": [
+      "glycolic acid",
+      "aloe vera",
+      "ginseng extract",
+      "witch hazel"
+    ],
+    "description": "Brightening toner with 5% glycolic acid to reveal glowing skin.",
+    "fragrance_free": false,
+    "alcohol_free": false,
+    "am": false,
+    "pm": true,
+    "url": "https://www.pixibeauty.com"
+  },
+  {
+    "id": 8,
+    "name": "Klairs Supple Preparation Unscented Toner",
+    "brand": "Dear, Klairs",
+    "type": "Toner",
+    "step": 2,
+    "price": 24.0,
+    "price_tier": "mid",
+    "skin_types": [
+      "sensitive",
+      "dry",
+      "normal"
+    ],
+    "concerns": [
+      "redness",
+      "dryness",
+      "sensitive"
+    ],
+    "key_ingredients": [
+      "Beta-Glucan",
+      "Hyaluronic Acid",
+      "Centella Asiatica"
+    ],
+    "ingredients": [
+      "beta-glucan",
+      "sodium hyaluronate",
+      "centella asiatica extract",
+      "niacinamide"
+    ],
+    "description": "Hydrating, unscented toner that preps skin for the rest of your routine.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.klairs.com"
+  },
+  {
+    "id": 9,
+    "name": "Thayers Witch Hazel Toner - Rose",
+    "brand": "Thayers",
+    "type": "Toner",
+    "step": 2,
+    "price": 15.99,
+    "price_tier": "budget",
+    "skin_types": [
+      "oily",
+      "combination",
+      "normal"
+    ],
+    "concerns": [
+      "pores",
+      "oiliness",
+      "acne"
+    ],
+    "key_ingredients": [
+      "Witch Hazel",
+      "Aloe Vera",
+      "Rose Water"
+    ],
+    "ingredients": [
+      "witch hazel",
+      "aloe vera",
+      "rose water",
+      "glycerin"
+    ],
+    "description": "Alcohol-free toner with witch hazel to minimize pores and balance skin.",
+    "fragrance_free": false,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.thayers.com"
+  },
+  {
+    "id": 10,
+    "name": "The Ordinary Glycolic Acid 7% Toning Solution",
+    "brand": "The Ordinary",
+    "type": "Toner",
+    "step": 2,
+    "price": 11.9,
+    "price_tier": "budget",
+    "skin_types": [
+      "normal",
+      "combination",
+      "oily"
+    ],
+    "concerns": [
+      "dullness",
+      "hyperpigmentation",
+      "uneven texture",
+      "aging"
+    ],
+    "key_ingredients": [
+      "Glycolic Acid 7%",
+      "Amino Acids",
+      "Aloe Vera"
+    ],
+    "ingredients": [
+      "glycolic acid",
+      "amino acids",
+      "aloe vera",
+      "ginseng extract",
+      "tasmanian pepperberry"
+    ],
+    "description": "Exfoliating toner with 7% glycolic acid that improves skin texture and brightness.",
+    "fragrance_free": false,
+    "alcohol_free": false,
+    "am": false,
+    "pm": true,
+    "url": "https://www.deciem.com"
+  },
+  {
+    "id": 11,
+    "name": "The Ordinary Hyaluronic Acid 2% + B5",
+    "brand": "The Ordinary",
+    "type": "Serum",
+    "step": 3,
+    "price": 11.9,
+    "price_tier": "budget",
+    "skin_types": [
+      "dry",
+      "normal",
+      "sensitive",
+      "oily",
+      "combination"
+    ],
+    "concerns": [
+      "dryness",
+      "dehydration"
+    ],
+    "key_ingredients": [
+      "Hyaluronic Acid 2%",
+      "Vitamin B5"
+    ],
+    "ingredients": [
+      "sodium hyaluronate",
+      "panthenol",
+      "hyaluronic acid",
+      "glycerin"
+    ],
+    "description": "Intense hydration serum with multiple weights of hyaluronic acid for all skin types.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.deciem.com"
+  },
+  {
+    "id": 12,
+    "name": "The Ordinary Niacinamide 10% + Zinc 1%",
+    "brand": "The Ordinary",
+    "type": "Serum",
+    "step": 3,
+    "price": 9.9,
+    "price_tier": "budget",
+    "skin_types": [
+      "oily",
+      "combination",
+      "acne-prone"
+    ],
+    "concerns": [
+      "acne",
+      "pores",
+      "oiliness",
+      "hyperpigmentation"
+    ],
+    "key_ingredients": [
+      "Niacinamide 10%",
+      "Zinc PCA 1%"
+    ],
+    "ingredients": [
+      "niacinamide",
+      "zinc pca",
+      "glycerin"
+    ],
+    "description": "Targets blemishes and visible pores while reducing excess oil.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.deciem.com"
+  },
+  {
+    "id": 13,
+    "name": "The Ordinary Vitamin C Suspension 23% + HA Spheres 2%",
+    "brand": "The Ordinary",
+    "type": "Serum",
+    "step": 3,
+    "price": 8.8,
+    "price_tier": "budget",
+    "skin_types": [
+      "normal",
+      "combination",
+      "oily"
+    ],
+    "concerns": [
+      "hyperpigmentation",
+      "dullness",
+      "aging"
+    ],
+    "key_ingredients": [
+      "Vitamin C 23%",
+      "Hyaluronic Acid"
+    ],
+    "ingredients": [
+      "ascorbic acid",
+      "sodium hyaluronate",
+      "squalane"
+    ],
+    "description": "High-strength vitamin C treatment for brightening and anti-aging.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": false,
+    "url": "https://www.deciem.com"
+  },
+  {
+    "id": 14,
+    "name": "The Ordinary Retinol 0.5% in Squalane",
+    "brand": "The Ordinary",
+    "type": "Serum",
+    "step": 3,
+    "price": 10.9,
+    "price_tier": "budget",
+    "skin_types": [
+      "normal",
+      "combination",
+      "dry"
+    ],
+    "concerns": [
+      "aging",
+      "wrinkles",
+      "hyperpigmentation"
+    ],
+    "key_ingredients": [
+      "Retinol 0.5%",
+      "Squalane"
+    ],
+    "ingredients": [
+      "retinol",
+      "squalane",
+      "isodecyl neopentanoate"
+    ],
+    "description": "Moderate-strength retinol in nourishing squalane base for anti-aging.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": false,
+    "pm": true,
+    "url": "https://www.deciem.com"
+  },
+  {
+    "id": 15,
+    "name": "Est\u00e9e Lauder Advanced Night Repair Serum",
+    "brand": "Est\u00e9e Lauder",
+    "type": "Serum",
+    "step": 3,
+    "price": 115.0,
+    "price_tier": "luxury",
+    "skin_types": [
+      "dry",
+      "normal",
+      "combination"
+    ],
+    "concerns": [
+      "aging",
+      "dullness",
+      "dehydration"
+    ],
+    "key_ingredients": [
+      "ChronoluxCB Technology",
+      "Hyaluronic Acid",
+      "Bifidus Prebiotic"
+    ],
+    "ingredients": [
+      "sodium hyaluronate",
+      "bifidus extract",
+      "hyaluronic acid",
+      "adenosine",
+      "glycerin"
+    ],
+    "description": "Iconic repair serum that works with your skin's natural renewal cycle overnight.",
+    "fragrance_free": false,
+    "alcohol_free": false,
+    "am": false,
+    "pm": true,
+    "url": "https://www.esteelauder.com"
+  },
+  {
+    "id": 16,
+    "name": "Paula's Choice C15 Super Booster Vitamin C",
+    "brand": "Paula's Choice",
+    "type": "Serum",
+    "step": 3,
+    "price": 65.0,
+    "price_tier": "luxury",
+    "skin_types": [
+      "normal",
+      "dry",
+      "combination"
+    ],
+    "concerns": [
+      "hyperpigmentation",
+      "aging",
+      "dullness"
+    ],
+    "key_ingredients": [
+      "Vitamin C 15%",
+      "Vitamin E",
+      "Ferulic Acid"
+    ],
+    "ingredients": [
+      "ascorbic acid",
+      "tocopherol",
+      "ferulic acid",
+      "glycerin",
+      "hyaluronic acid"
+    ],
+    "description": "Potent antioxidant serum with 15% vitamin C, vitamin E and ferulic acid.",
+    "fragrance_free": true,
+    "alcohol_free": false,
+    "am": true,
+    "pm": false,
+    "url": "https://www.paulaschoice.com"
+  },
+  {
+    "id": 17,
+    "name": "The Inkey List Retinol Serum",
+    "brand": "The Inkey List",
+    "type": "Serum",
+    "step": 3,
+    "price": 14.99,
+    "price_tier": "budget",
+    "skin_types": [
+      "normal",
+      "combination",
+      "oily"
+    ],
+    "concerns": [
+      "aging",
+      "acne",
+      "hyperpigmentation"
+    ],
+    "key_ingredients": [
+      "Retinol 1%",
+      "Retinyl Propionate",
+      "Squalane"
+    ],
+    "ingredients": [
+      "retinol",
+      "retinyl propionate",
+      "squalane",
+      "hydroxypinacolone retinoate"
+    ],
+    "description": "Gradual release retinol formula for beginners working up to stronger concentrations.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": false,
+    "pm": true,
+    "url": "https://www.theinkeylist.com"
+  },
+  {
+    "id": 18,
+    "name": "Cosrx Advanced Snail 96 Mucin Power Essence",
+    "brand": "Cosrx",
+    "type": "Serum",
+    "step": 3,
+    "price": 28.0,
+    "price_tier": "mid",
+    "skin_types": [
+      "dry",
+      "sensitive",
+      "normal",
+      "combination"
+    ],
+    "concerns": [
+      "dryness",
+      "redness",
+      "dullness",
+      "sensitive"
+    ],
+    "key_ingredients": [
+      "Snail Secretion Filtrate 96%",
+      "Sodium Hyaluronate"
+    ],
+    "ingredients": [
+      "snail secretion filtrate",
+      "sodium hyaluronate",
+      "glycerin",
+      "allantoin"
+    ],
+    "description": "Lightweight essence packed with snail mucin to hydrate and repair skin.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.cosrx.com"
+  },
+  {
+    "id": 19,
+    "name": "Skinceuticals C E Ferulic",
+    "brand": "Skinceuticals",
+    "type": "Serum",
+    "step": 3,
+    "price": 182.0,
+    "price_tier": "luxury",
+    "skin_types": [
+      "normal",
+      "dry",
+      "sensitive"
+    ],
+    "concerns": [
+      "aging",
+      "hyperpigmentation",
+      "dullness"
+    ],
+    "key_ingredients": [
+      "Vitamin C 15%",
+      "Vitamin E 1%",
+      "Ferulic Acid 0.5%"
+    ],
+    "ingredients": [
+      "ascorbic acid",
+      "tocopherol",
+      "ferulic acid",
+      "hyaluronic acid"
+    ],
+    "description": "Gold standard vitamin C serum combining antioxidants for visible anti-aging.",
+    "fragrance_free": true,
+    "alcohol_free": false,
+    "am": true,
+    "pm": false,
+    "url": "https://www.skinceuticals.com"
+  },
+  {
+    "id": 20,
+    "name": "The Inkey List Alpha Arbutin Serum",
+    "brand": "The Inkey List",
+    "type": "Serum",
+    "step": 3,
+    "price": 12.99,
+    "price_tier": "budget",
+    "skin_types": [
+      "all"
+    ],
+    "concerns": [
+      "hyperpigmentation",
+      "dark spots",
+      "dullness"
+    ],
+    "key_ingredients": [
+      "Alpha Arbutin 2%",
+      "Hyaluronic Acid"
+    ],
+    "ingredients": [
+      "alpha arbutin",
+      "sodium hyaluronate",
+      "glycerin"
+    ],
+    "description": "Brightening serum targeting dark spots and uneven skin tone.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.theinkeylist.com"
+  },
+  {
+    "id": 21,
+    "name": "CeraVe Moisturising Cream",
+    "brand": "CeraVe",
+    "type": "Moisturiser",
+    "step": 5,
+    "price": 19.99,
+    "price_tier": "budget",
+    "skin_types": [
+      "dry",
+      "normal",
+      "sensitive"
+    ],
+    "concerns": [
+      "dryness",
+      "redness",
+      "sensitive"
+    ],
+    "key_ingredients": [
+      "Ceramides",
+      "Hyaluronic Acid",
+      "MVE Technology"
+    ],
+    "ingredients": [
+      "ceramide np",
+      "ceramide ap",
+      "ceramide eop",
+      "hyaluronic acid",
+      "glycerin",
+      "cholesterol",
+      "petrolatum"
+    ],
+    "description": "Rich, non-greasy moisturiser that restores the protective skin barrier.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.cerave.com"
+  },
+  {
+    "id": 22,
+    "name": "Neutrogena Hydro Boost Water Gel",
+    "brand": "Neutrogena",
+    "type": "Moisturiser",
+    "step": 5,
+    "price": 22.99,
+    "price_tier": "budget",
+    "skin_types": [
+      "oily",
+      "combination",
+      "normal"
+    ],
+    "concerns": [
+      "dehydration",
+      "oiliness",
+      "pores"
+    ],
+    "key_ingredients": [
+      "Hyaluronic Acid",
+      "Dimethicone"
+    ],
+    "ingredients": [
+      "sodium hyaluronate",
+      "dimethicone",
+      "glycerin"
+    ],
+    "description": "Lightweight gel-cream that quenches skin without clogging pores.",
+    "fragrance_free": false,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.neutrogena.com"
+  },
+  {
+    "id": 23,
+    "name": "Clinique Moisture Surge 100-Hour Auto-Replenishing Hydrator",
+    "brand": "Clinique",
+    "type": "Moisturiser",
+    "step": 5,
+    "price": 60.0,
+    "price_tier": "luxury",
+    "skin_types": [
+      "oily",
+      "combination",
+      "normal"
+    ],
+    "concerns": [
+      "dehydration",
+      "dullness"
+    ],
+    "key_ingredients": [
+      "Activated Aloe Water",
+      "Hyaluronic Acid",
+      "Caffeine"
+    ],
+    "ingredients": [
+      "aloe barbadensis leaf juice",
+      "sodium hyaluronate",
+      "caffeine",
+      "glycerin"
+    ],
+    "description": "Oil-free gel moisturiser delivering continuous hydration for 100 hours.",
+    "fragrance_free": false,
+    "alcohol_free": false,
+    "am": true,
+    "pm": true,
+    "url": "https://www.clinique.com"
+  },
+  {
+    "id": 24,
+    "name": "La Roche-Posay Toleriane Double Repair Moisturiser",
+    "brand": "La Roche-Posay",
+    "type": "Moisturiser",
+    "step": 5,
+    "price": 31.0,
+    "price_tier": "mid",
+    "skin_types": [
+      "dry",
+      "sensitive",
+      "normal"
+    ],
+    "concerns": [
+      "redness",
+      "dryness",
+      "sensitive"
+    ],
+    "key_ingredients": [
+      "Ceramides",
+      "Niacinamide",
+      "Glycerin"
+    ],
+    "ingredients": [
+      "ceramide np",
+      "niacinamide",
+      "glycerin",
+      "thermal spring water",
+      "shea butter"
+    ],
+    "description": "Prebiotic moisturiser that restores the microbiome while deeply hydrating.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.laroche-posay.com"
+  },
+  {
+    "id": 25,
+    "name": "Paula's Choice Skin Recovery Moisturizer SPF 30",
+    "brand": "Paula's Choice",
+    "type": "Moisturiser",
+    "step": 5,
+    "price": 42.0,
+    "price_tier": "mid",
+    "skin_types": [
+      "dry",
+      "sensitive"
+    ],
+    "concerns": [
+      "dryness",
+      "aging",
+      "redness"
+    ],
+    "key_ingredients": [
+      "Zinc Oxide SPF 30",
+      "Ceramides",
+      "Peptides"
+    ],
+    "ingredients": [
+      "zinc oxide",
+      "ceramide np",
+      "peptides",
+      "glycerin",
+      "shea butter"
+    ],
+    "description": "Rich moisturiser with SPF 30 that repairs dry, sensitive skin.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": false,
+    "url": "https://www.paulaschoice.com"
+  },
+  {
+    "id": 26,
+    "name": "The Ordinary Natural Moisturising Factors + HA",
+    "brand": "The Ordinary",
+    "type": "Moisturiser",
+    "step": 5,
+    "price": 9.8,
+    "price_tier": "budget",
+    "skin_types": [
+      "dry",
+      "normal",
+      "combination"
+    ],
+    "concerns": [
+      "dryness",
+      "dehydration"
+    ],
+    "key_ingredients": [
+      "Amino Acids",
+      "Hyaluronic Acid",
+      "PCA"
+    ],
+    "ingredients": [
+      "hyaluronic acid",
+      "sodium pca",
+      "amino acids",
+      "glycerin",
+      "capric triglyceride"
+    ],
+    "description": "Replenishes skin's natural moisturising factors for long-lasting hydration.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.deciem.com"
+  },
+  {
+    "id": 27,
+    "name": "Tatcha The Water Cream",
+    "brand": "Tatcha",
+    "type": "Moisturiser",
+    "step": 5,
+    "price": 85.0,
+    "price_tier": "luxury",
+    "skin_types": [
+      "oily",
+      "combination"
+    ],
+    "concerns": [
+      "pores",
+      "oiliness",
+      "dullness"
+    ],
+    "key_ingredients": [
+      "Japanese Leopard Lily",
+      "Hadasei-3",
+      "Niacinamide"
+    ],
+    "ingredients": [
+      "niacinamide",
+      "sodium hyaluronate",
+      "japanese leopard lily extract",
+      "glycerin"
+    ],
+    "description": "Oil-free water cream that minimizes pores while deeply hydrating oily skin.",
+    "fragrance_free": false,
+    "alcohol_free": false,
+    "am": true,
+    "pm": true,
+    "url": "https://www.tatcha.com"
+  },
+  {
+    "id": 28,
+    "name": "First Aid Beauty Ultra Repair Cream",
+    "brand": "First Aid Beauty",
+    "type": "Moisturiser",
+    "step": 5,
+    "price": 42.0,
+    "price_tier": "mid",
+    "skin_types": [
+      "dry",
+      "sensitive",
+      "normal"
+    ],
+    "concerns": [
+      "dryness",
+      "eczema",
+      "redness",
+      "sensitive"
+    ],
+    "key_ingredients": [
+      "Colloidal Oatmeal",
+      "Shea Butter",
+      "Ceramides"
+    ],
+    "ingredients": [
+      "colloidal oatmeal",
+      "shea butter",
+      "ceramide np",
+      "glycerin",
+      "allantoin"
+    ],
+    "description": "Intense relief cream clinically proven to provide rapid relief for dry, itchy skin.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.firstaidbeauty.com"
+  },
+  {
+    "id": 29,
+    "name": "Eucerin Original Healing Cream",
+    "brand": "Eucerin",
+    "type": "Moisturiser",
+    "step": 5,
+    "price": 13.99,
+    "price_tier": "budget",
+    "skin_types": [
+      "dry",
+      "very dry",
+      "sensitive"
+    ],
+    "concerns": [
+      "dryness",
+      "eczema",
+      "sensitive"
+    ],
+    "key_ingredients": [
+      "Petrolatum",
+      "Mineral Oil",
+      "Urea"
+    ],
+    "ingredients": [
+      "petrolatum",
+      "mineral oil",
+      "urea",
+      "glycerin",
+      "lanolin alcohol"
+    ],
+    "description": "Deeply moisturising cream for very dry or compromised skin.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": false,
+    "pm": true,
+    "url": "https://www.eucerinus.com"
+  },
+  {
+    "id": 30,
+    "name": "CeraVe Facial Moisturising Lotion SPF 25",
+    "brand": "CeraVe",
+    "type": "SPF",
+    "step": 6,
+    "price": 15.99,
+    "price_tier": "budget",
+    "skin_types": [
+      "normal",
+      "dry",
+      "sensitive"
+    ],
+    "concerns": [
+      "aging",
+      "hyperpigmentation",
+      "sensitive"
+    ],
+    "key_ingredients": [
+      "Zinc Oxide SPF 25",
+      "Ceramides",
+      "Niacinamide"
+    ],
+    "ingredients": [
+      "zinc oxide",
+      "ceramide np",
+      "niacinamide",
+      "glycerin",
+      "hyaluronic acid"
+    ],
+    "description": "Lightweight daily moisturiser with broad spectrum SPF 25 protection.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": false,
+    "url": "https://www.cerave.com"
+  },
+  {
+    "id": 31,
+    "name": "La Roche-Posay Anthelios Ultra-Light Fluid SPF 50+",
+    "brand": "La Roche-Posay",
+    "type": "SPF",
+    "step": 6,
+    "price": 29.0,
+    "price_tier": "mid",
+    "skin_types": [
+      "oily",
+      "combination",
+      "sensitive"
+    ],
+    "concerns": [
+      "oiliness",
+      "aging",
+      "hyperpigmentation"
+    ],
+    "key_ingredients": [
+      "Mexoryl SX & XL",
+      "Antioxidants"
+    ],
+    "ingredients": [
+      "homosalate",
+      "octocrylene",
+      "butyl methoxydibenzoylmethane",
+      "glycerin",
+      "silica"
+    ],
+    "description": "Ultra-light, non-greasy SPF 50+ that leaves no white cast on all skin tones.",
+    "fragrance_free": true,
+    "alcohol_free": false,
+    "am": true,
+    "pm": false,
+    "url": "https://www.laroche-posay.com"
+  },
+  {
+    "id": 32,
+    "name": "Altruist Sunscreen SPF 50",
+    "brand": "Altruist",
+    "type": "SPF",
+    "step": 6,
+    "price": 3.99,
+    "price_tier": "budget",
+    "skin_types": [
+      "all"
+    ],
+    "concerns": [
+      "aging",
+      "hyperpigmentation"
+    ],
+    "key_ingredients": [
+      "Tinosorb S",
+      "Tinosorb M"
+    ],
+    "ingredients": [
+      "homosalate",
+      "butyl methoxydibenzoylmethane",
+      "tinosorb s",
+      "tinosorb m",
+      "glycerin"
+    ],
+    "description": "Dermatologist-formulated broad spectrum SPF 50 at an accessible price.",
+    "fragrance_free": false,
+    "alcohol_free": false,
+    "am": true,
+    "pm": false,
+    "url": "https://www.altruistuk.com"
+  },
+  {
+    "id": 33,
+    "name": "Supergoop! Unseen Sunscreen SPF 40",
+    "brand": "Supergoop",
+    "type": "SPF",
+    "step": 6,
+    "price": 48.0,
+    "price_tier": "luxury",
+    "skin_types": [
+      "oily",
+      "combination",
+      "normal"
+    ],
+    "concerns": [
+      "oiliness",
+      "pores",
+      "aging"
+    ],
+    "key_ingredients": [
+      "Red Algae",
+      "Meadowfoam Seed",
+      "Olive Leaf Extract"
+    ],
+    "ingredients": [
+      "homosalate",
+      "octisalate",
+      "meadowfoam seed oil",
+      "red algae extract",
+      "olive leaf extract"
+    ],
+    "description": "Invisible, weightless sunscreen that doubles as a makeup primer.",
+    "fragrance_free": false,
+    "alcohol_free": false,
+    "am": true,
+    "pm": false,
+    "url": "https://www.supergoop.com"
+  },
+  {
+    "id": 34,
+    "name": "Neostrata Bionic Eye Cream Plus",
+    "brand": "Neostrata",
+    "type": "Eye Care",
+    "step": 4,
+    "price": 58.0,
+    "price_tier": "luxury",
+    "skin_types": [
+      "normal",
+      "dry",
+      "sensitive"
+    ],
+    "concerns": [
+      "aging",
+      "dark circles",
+      "puffiness"
+    ],
+    "key_ingredients": [
+      "PHA",
+      "Lactobionic Acid",
+      "Blueberry Extract"
+    ],
+    "ingredients": [
+      "lactobionic acid",
+      "gluconolactone",
+      "blueberry extract",
+      "glycerin",
+      "hyaluronic acid"
+    ],
+    "description": "Gentle eye cream with PHAs that smoothes fine lines and brightens dark circles.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.neostrata.com"
+  },
+  {
+    "id": 35,
+    "name": "The Inkey List Caffeine Eye Cream",
+    "brand": "The Inkey List",
+    "type": "Eye Care",
+    "step": 4,
+    "price": 11.99,
+    "price_tier": "budget",
+    "skin_types": [
+      "all"
+    ],
+    "concerns": [
+      "dark circles",
+      "puffiness",
+      "fatigue"
+    ],
+    "key_ingredients": [
+      "Caffeine",
+      "Peptides",
+      "Hyaluronic Acid"
+    ],
+    "ingredients": [
+      "caffeine",
+      "peptides",
+      "sodium hyaluronate",
+      "glycerin",
+      "vitamin k"
+    ],
+    "description": "Depuffs and brightens the eye area with caffeine and skin-smoothing peptides.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.theinkeylist.com"
+  },
+  {
+    "id": 36,
+    "name": "Clinique All About Eyes Rich",
+    "brand": "Clinique",
+    "type": "Eye Care",
+    "step": 4,
+    "price": 50.0,
+    "price_tier": "luxury",
+    "skin_types": [
+      "dry",
+      "normal",
+      "sensitive"
+    ],
+    "concerns": [
+      "dark circles",
+      "puffiness",
+      "aging",
+      "dryness"
+    ],
+    "key_ingredients": [
+      "Sea Whip Extract",
+      "Vitamin E",
+      "Cucumber"
+    ],
+    "ingredients": [
+      "sea whip extract",
+      "tocopherol",
+      "cucumber extract",
+      "hyaluronic acid",
+      "glycerin"
+    ],
+    "description": "Rich eye cream that reduces puffiness and softens fine lines around the eyes.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.clinique.com"
+  },
+  {
+    "id": 37,
+    "name": "The Ordinary Argireline Solution 10%",
+    "brand": "The Ordinary",
+    "type": "Eye Care",
+    "step": 4,
+    "price": 9.9,
+    "price_tier": "budget",
+    "skin_types": [
+      "all"
+    ],
+    "concerns": [
+      "aging",
+      "expression lines",
+      "wrinkles"
+    ],
+    "key_ingredients": [
+      "Argireline 10%",
+      "Leuphasyl"
+    ],
+    "ingredients": [
+      "acetyl hexapeptide-3",
+      "leuphasyl",
+      "glycerin",
+      "sodium hyaluronate"
+    ],
+    "description": "Peptide-based serum that visibly reduces expression lines and crow's feet.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.deciem.com"
+  },
+  {
+    "id": 38,
+    "name": "Glamglow SuperMud Clearing Treatment",
+    "brand": "Glamglow",
+    "type": "Mask",
+    "step": 7,
+    "price": 60.0,
+    "price_tier": "luxury",
+    "skin_types": [
+      "oily",
+      "combination",
+      "acne-prone"
+    ],
+    "concerns": [
+      "acne",
+      "pores",
+      "blackheads",
+      "oiliness"
+    ],
+    "key_ingredients": [
+      "Activated Charcoal",
+      "Salicylic Acid",
+      "Glycolic Acid"
+    ],
+    "ingredients": [
+      "activated charcoal",
+      "salicylic acid",
+      "glycolic acid",
+      "kaolin",
+      "bentonite"
+    ],
+    "description": "Clarifying clay mask that deep-cleans pores and treats blemishes.",
+    "fragrance_free": false,
+    "alcohol_free": false,
+    "am": false,
+    "pm": false,
+    "url": "https://www.glamglow.com"
+  },
+  {
+    "id": 39,
+    "name": "Origins Clear Improvement Active Charcoal Mask",
+    "brand": "Origins",
+    "type": "Mask",
+    "step": 7,
+    "price": 40.0,
+    "price_tier": "mid",
+    "skin_types": [
+      "oily",
+      "combination"
+    ],
+    "concerns": [
+      "pores",
+      "oiliness",
+      "acne",
+      "blackheads"
+    ],
+    "key_ingredients": [
+      "Activated Charcoal",
+      "White China Clay",
+      "Lecithin"
+    ],
+    "ingredients": [
+      "activated charcoal",
+      "kaolin",
+      "lecithin",
+      "glycerin"
+    ],
+    "description": "Charcoal-powered mask that draws out deep-dwelling debris to minimize pores.",
+    "fragrance_free": false,
+    "alcohol_free": false,
+    "am": false,
+    "pm": false,
+    "url": "https://www.origins.com"
+  },
+  {
+    "id": 40,
+    "name": "Dr. Jart+ Cicapair Tiger Grass Mask",
+    "brand": "Dr.Jart+",
+    "type": "Mask",
+    "step": 7,
+    "price": 49.0,
+    "price_tier": "luxury",
+    "skin_types": [
+      "sensitive",
+      "dry",
+      "normal"
+    ],
+    "concerns": [
+      "redness",
+      "sensitive",
+      "dryness"
+    ],
+    "key_ingredients": [
+      "Centella Asiatica",
+      "Tiger Grass",
+      "Ceramides"
+    ],
+    "ingredients": [
+      "centella asiatica extract",
+      "ceramide np",
+      "glycerin",
+      "allantoin",
+      "sodium hyaluronate"
+    ],
+    "description": "Calming sheet mask that reduces redness and strengthens the skin barrier.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": false,
+    "pm": false,
+    "url": "https://www.drjart.com"
+  },
+  {
+    "id": 41,
+    "name": "Paula's Choice Skin Perfecting 8% AHA Gel Exfoliant",
+    "brand": "Paula's Choice",
+    "type": "Exfoliator",
+    "step": 2,
+    "price": 33.0,
+    "price_tier": "mid",
+    "skin_types": [
+      "dry",
+      "normal",
+      "combination"
+    ],
+    "concerns": [
+      "dullness",
+      "uneven texture",
+      "hyperpigmentation",
+      "aging"
+    ],
+    "key_ingredients": [
+      "Glycolic Acid 8%",
+      "Green Tea"
+    ],
+    "ingredients": [
+      "glycolic acid",
+      "green tea extract",
+      "allantoin",
+      "glycerin"
+    ],
+    "description": "Leave-on AHA exfoliant that improves skin texture and radiance overnight.",
+    "fragrance_free": true,
+    "alcohol_free": false,
+    "am": false,
+    "pm": true,
+    "url": "https://www.paulaschoice.com"
+  },
+  {
+    "id": 42,
+    "name": "Nip+Fab Glycolic Fix Night Pads Extreme",
+    "brand": "Nip+Fab",
+    "type": "Exfoliator",
+    "step": 2,
+    "price": 16.99,
+    "price_tier": "budget",
+    "skin_types": [
+      "normal",
+      "combination",
+      "oily"
+    ],
+    "concerns": [
+      "dullness",
+      "uneven texture",
+      "hyperpigmentation"
+    ],
+    "key_ingredients": [
+      "Glycolic Acid 5%",
+      "Hyaluronic Acid",
+      "Blue Agave"
+    ],
+    "ingredients": [
+      "glycolic acid",
+      "sodium hyaluronate",
+      "agave extract",
+      "salicylic acid"
+    ],
+    "description": "Pre-soaked exfoliating pads with glycolic acid for brighter, smoother skin.",
+    "fragrance_free": false,
+    "alcohol_free": false,
+    "am": false,
+    "pm": true,
+    "url": "https://www.nipandfab.com"
+  },
+  {
+    "id": 43,
+    "name": "The Inkey List PHAs Toner",
+    "brand": "The Inkey List",
+    "type": "Toner",
+    "step": 2,
+    "price": 13.99,
+    "price_tier": "budget",
+    "skin_types": [
+      "sensitive",
+      "dry",
+      "normal"
+    ],
+    "concerns": [
+      "sensitive",
+      "dullness",
+      "uneven texture"
+    ],
+    "key_ingredients": [
+      "PHA 5%",
+      "Hyaluronic Acid",
+      "Aloe"
+    ],
+    "ingredients": [
+      "gluconolactone",
+      "lactobionic acid",
+      "sodium hyaluronate",
+      "aloe vera"
+    ],
+    "description": "Gentle polyhydroxy acid toner for exfoliation without irritation.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": false,
+    "pm": true,
+    "url": "https://www.theinkeylist.com"
+  },
+  {
+    "id": 44,
+    "name": "Cosrx BHA Blackhead Power Liquid",
+    "brand": "Cosrx",
+    "type": "Toner",
+    "step": 2,
+    "price": 27.0,
+    "price_tier": "mid",
+    "skin_types": [
+      "oily",
+      "combination",
+      "acne-prone"
+    ],
+    "concerns": [
+      "acne",
+      "blackheads",
+      "pores"
+    ],
+    "key_ingredients": [
+      "Betaine Salicylate 4%",
+      "Willow Bark Water"
+    ],
+    "ingredients": [
+      "betaine salicylate",
+      "salix alba bark water",
+      "niacinamide",
+      "glycerin"
+    ],
+    "description": "Gentle BHA exfoliator with willow bark water for cleaner, clearer pores.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": false,
+    "pm": true,
+    "url": "https://www.cosrx.com"
+  },
+  {
+    "id": 45,
+    "name": "The Ordinary Azelaic Acid Suspension 10%",
+    "brand": "The Ordinary",
+    "type": "Serum",
+    "step": 3,
+    "price": 12.9,
+    "price_tier": "budget",
+    "skin_types": [
+      "sensitive",
+      "oily",
+      "combination"
+    ],
+    "concerns": [
+      "redness",
+      "acne",
+      "hyperpigmentation",
+      "rosacea"
+    ],
+    "key_ingredients": [
+      "Azelaic Acid 10%"
+    ],
+    "ingredients": [
+      "azelaic acid",
+      "dimethicone",
+      "glycerin",
+      "isoceteth-20"
+    ],
+    "description": "Brightening and clarifying serum that targets blemishes and hyperpigmentation.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.deciem.com"
+  },
+  {
+    "id": 46,
+    "name": "Medik8 Crystal Retinal 3",
+    "brand": "Medik8",
+    "type": "Serum",
+    "step": 3,
+    "price": 55.0,
+    "price_tier": "mid",
+    "skin_types": [
+      "normal",
+      "combination",
+      "dry"
+    ],
+    "concerns": [
+      "aging",
+      "hyperpigmentation",
+      "acne",
+      "uneven texture"
+    ],
+    "key_ingredients": [
+      "Retinaldehyde 0.03%",
+      "Hyaluronic Acid",
+      "Vitamin E"
+    ],
+    "ingredients": [
+      "retinaldehyde",
+      "sodium hyaluronate",
+      "tocopherol",
+      "glycerin",
+      "squalane"
+    ],
+    "description": "Entry-level retinaldehyde serum \u2014 11x faster than retinol with less irritation.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": false,
+    "pm": true,
+    "url": "https://www.medik8.com"
+  },
+  {
+    "id": 47,
+    "name": "Cosrx Propolis Light Ampule",
+    "brand": "Cosrx",
+    "type": "Serum",
+    "step": 3,
+    "price": 33.0,
+    "price_tier": "mid",
+    "skin_types": [
+      "sensitive",
+      "dry",
+      "normal"
+    ],
+    "concerns": [
+      "redness",
+      "dryness",
+      "sensitive",
+      "dullness"
+    ],
+    "key_ingredients": [
+      "Propolis Extract 73.5%",
+      "Niacinamide"
+    ],
+    "ingredients": [
+      "propolis extract",
+      "niacinamide",
+      "sodium hyaluronate",
+      "glycerin"
+    ],
+    "description": "Calming serum with concentrated propolis to soothe sensitive, reactive skin.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.cosrx.com"
+  },
+  {
+    "id": 48,
+    "name": "Filorga Time-Filler Intensive Wrinkle Correction Serum",
+    "brand": "Filorga",
+    "type": "Serum",
+    "step": 3,
+    "price": 88.0,
+    "price_tier": "luxury",
+    "skin_types": [
+      "dry",
+      "normal",
+      "combination"
+    ],
+    "concerns": [
+      "aging",
+      "wrinkles",
+      "dullness"
+    ],
+    "key_ingredients": [
+      "NCTF Complex",
+      "Hyaluronic Acid",
+      "Peptides"
+    ],
+    "ingredients": [
+      "nctf complex",
+      "hyaluronic acid",
+      "peptides",
+      "glycerin",
+      "vitamin c"
+    ],
+    "description": "Advanced anti-aging serum visibly correcting all types of wrinkles.",
+    "fragrance_free": false,
+    "alcohol_free": false,
+    "am": true,
+    "pm": true,
+    "url": "https://www.filorga.com"
+  },
+  {
+    "id": 49,
+    "name": "Aveeno Positively Radiant Sheer Daily Moisturizer SPF 30",
+    "brand": "Aveeno",
+    "type": "SPF",
+    "step": 6,
+    "price": 25.99,
+    "price_tier": "budget",
+    "skin_types": [
+      "normal",
+      "dry",
+      "combination"
+    ],
+    "concerns": [
+      "dullness",
+      "hyperpigmentation",
+      "aging"
+    ],
+    "key_ingredients": [
+      "Total Soy Complex",
+      "SPF 30"
+    ],
+    "ingredients": [
+      "avobenzone",
+      "homosalate",
+      "soy extract",
+      "glycerin",
+      "niacinamide"
+    ],
+    "description": "Daily moisturiser with SPF 30 that evens out skin tone over time.",
+    "fragrance_free": false,
+    "alcohol_free": true,
+    "am": true,
+    "pm": false,
+    "url": "https://www.aveeno.com"
+  },
+  {
+    "id": 50,
+    "name": "The Ordinary 100% Plant-Derived Squalane",
+    "brand": "The Ordinary",
+    "type": "Oil",
+    "step": 5,
+    "price": 9.9,
+    "price_tier": "budget",
+    "skin_types": [
+      "dry",
+      "sensitive",
+      "normal"
+    ],
+    "concerns": [
+      "dryness",
+      "sensitive",
+      "dehydration"
+    ],
+    "key_ingredients": [
+      "Squalane 100%"
+    ],
+    "ingredients": [
+      "squalane"
+    ],
+    "description": "Pure squalane oil that seals in moisture without clogging pores.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.deciem.com"
+  },
+  {
+    "id": 51,
+    "name": "Trilogy Certified Organic Rosehip Oil",
+    "brand": "Trilogy",
+    "type": "Oil",
+    "step": 5,
+    "price": 30.99,
+    "price_tier": "mid",
+    "skin_types": [
+      "dry",
+      "normal",
+      "combination"
+    ],
+    "concerns": [
+      "aging",
+      "hyperpigmentation",
+      "dryness",
+      "scars"
+    ],
+    "key_ingredients": [
+      "Rosehip Seed Oil",
+      "Vitamin C",
+      "Essential Fatty Acids"
+    ],
+    "ingredients": [
+      "rosa canina seed oil",
+      "ascorbic acid",
+      "linoleic acid",
+      "oleic acid"
+    ],
+    "description": "Award-winning certified organic rosehip oil that reduces fine lines and scars.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": false,
+    "pm": true,
+    "url": "https://www.trilogyproducts.com"
+  },
+  {
+    "id": 52,
+    "name": "Cosrx AC Collection Blemish Spot Clearing Serum",
+    "brand": "Cosrx",
+    "type": "Serum",
+    "step": 3,
+    "price": 22.0,
+    "price_tier": "mid",
+    "skin_types": [
+      "oily",
+      "acne-prone",
+      "combination"
+    ],
+    "concerns": [
+      "acne",
+      "blemishes",
+      "oiliness"
+    ],
+    "key_ingredients": [
+      "Tea Tree Leaf Water 57%",
+      "Salicylic Acid"
+    ],
+    "ingredients": [
+      "tea tree leaf water",
+      "salicylic acid",
+      "niacinamide",
+      "glycerin"
+    ],
+    "description": "Targeted blemish serum with tea tree and salicylic acid for spot-prone skin.",
+    "fragrance_free": false,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.cosrx.com"
+  },
+  {
+    "id": 53,
+    "name": "Murad Resurgence Retinol Youth Renewal Serum",
+    "brand": "Murad",
+    "type": "Serum",
+    "step": 3,
+    "price": 105.0,
+    "price_tier": "luxury",
+    "skin_types": [
+      "normal",
+      "dry",
+      "combination"
+    ],
+    "concerns": [
+      "aging",
+      "wrinkles",
+      "dullness"
+    ],
+    "key_ingredients": [
+      "Retinol",
+      "Fast-Acting Retinoid",
+      "Hyaluronic Acid"
+    ],
+    "ingredients": [
+      "retinol",
+      "hydroxypinacolone retinoate",
+      "sodium hyaluronate",
+      "glycerin",
+      "ceramide np"
+    ],
+    "description": "Dual-retinoid serum that delivers fast results with minimized irritation.",
+    "fragrance_free": false,
+    "alcohol_free": false,
+    "am": false,
+    "pm": true,
+    "url": "https://www.murad.com"
+  },
+  {
+    "id": 54,
+    "name": "Elemis Pro-Collagen Marine Cream",
+    "brand": "Elemis",
+    "type": "Moisturiser",
+    "step": 5,
+    "price": 118.0,
+    "price_tier": "luxury",
+    "skin_types": [
+      "dry",
+      "normal",
+      "mature"
+    ],
+    "concerns": [
+      "aging",
+      "wrinkles",
+      "dryness"
+    ],
+    "key_ingredients": [
+      "Padina Pavonica Algae",
+      "Ginkgo Biloba",
+      "Rose"
+    ],
+    "ingredients": [
+      "padina pavonica extract",
+      "ginkgo biloba extract",
+      "rosa centifolia extract",
+      "glycerin",
+      "shea butter"
+    ],
+    "description": "Iconic anti-aging marine cream clinically proven to reduce wrinkles in 14 days.",
+    "fragrance_free": false,
+    "alcohol_free": false,
+    "am": true,
+    "pm": true,
+    "url": "https://www.elemis.com"
+  },
+  {
+    "id": 55,
+    "name": "Bioderma Sensibio H2O Micellar Water",
+    "brand": "Bioderma",
+    "type": "Cleanser",
+    "step": 1,
+    "price": 16.99,
+    "price_tier": "budget",
+    "skin_types": [
+      "sensitive",
+      "dry",
+      "normal"
+    ],
+    "concerns": [
+      "sensitive",
+      "redness"
+    ],
+    "key_ingredients": [
+      "Micellar Technology",
+      "Cucumber Extract"
+    ],
+    "ingredients": [
+      "micelles",
+      "cucumber extract",
+      "glycerin",
+      "allantoin"
+    ],
+    "description": "Iconic French pharmacy micellar water that gently removes makeup without rubbing.",
+    "fragrance_free": false,
+    "alcohol_free": true,
+    "am": false,
+    "pm": true,
+    "url": "https://www.bioderma.com"
+  },
+  {
+    "id": 56,
+    "name": "Garnier Micellar Cleansing Water",
+    "brand": "Garnier",
+    "type": "Cleanser",
+    "step": 1,
+    "price": 8.99,
+    "price_tier": "budget",
+    "skin_types": [
+      "all"
+    ],
+    "concerns": [
+      "sensitive"
+    ],
+    "key_ingredients": [
+      "Micellar Technology"
+    ],
+    "ingredients": [
+      "micelles",
+      "glycerin"
+    ],
+    "description": "Budget-friendly micellar water for effective yet gentle makeup removal.",
+    "fragrance_free": false,
+    "alcohol_free": true,
+    "am": false,
+    "pm": true,
+    "url": "https://www.garnierusa.com"
+  },
+  {
+    "id": 57,
+    "name": "The Inkey List Bakuchiol Moisturiser",
+    "brand": "The Inkey List",
+    "type": "Moisturiser",
+    "step": 5,
+    "price": 16.99,
+    "price_tier": "budget",
+    "skin_types": [
+      "sensitive",
+      "dry",
+      "normal"
+    ],
+    "concerns": [
+      "aging",
+      "sensitive",
+      "dryness"
+    ],
+    "key_ingredients": [
+      "Bakuchiol 1%",
+      "Ceramides",
+      "Hyaluronic Acid"
+    ],
+    "ingredients": [
+      "bakuchiol",
+      "ceramide np",
+      "sodium hyaluronate",
+      "glycerin",
+      "squalane"
+    ],
+    "description": "Retinol alternative moisturiser with bakuchiol \u2014 anti-aging without the irritation.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.theinkeylist.com"
+  },
+  {
+    "id": 58,
+    "name": "Vichy Min\u00e9ral 89 Hyaluronic Acid Face Serum",
+    "brand": "Vichy",
+    "type": "Serum",
+    "step": 3,
+    "price": 39.0,
+    "price_tier": "mid",
+    "skin_types": [
+      "all"
+    ],
+    "concerns": [
+      "dehydration",
+      "dullness",
+      "sensitive"
+    ],
+    "key_ingredients": [
+      "Hyaluronic Acid",
+      "Vichy Mineralizing Water"
+    ],
+    "ingredients": [
+      "sodium hyaluronate",
+      "vichy mineralizing water",
+      "glycerin",
+      "niacinamide"
+    ],
+    "description": "Daily booster that plumps and strengthens skin with 89% Vichy mineralizing water.",
+    "fragrance_free": false,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.vichyusa.com"
+  },
+  {
+    "id": 59,
+    "name": "Kiehl's Midnight Recovery Concentrate",
+    "brand": "Kiehl's",
+    "type": "Oil",
+    "step": 5,
+    "price": 58.0,
+    "price_tier": "luxury",
+    "skin_types": [
+      "dry",
+      "normal",
+      "combination"
+    ],
+    "concerns": [
+      "aging",
+      "dryness",
+      "dullness"
+    ],
+    "key_ingredients": [
+      "Lavender Essential Oil",
+      "Evening Primrose Oil",
+      "Squalane"
+    ],
+    "ingredients": [
+      "lavender oil",
+      "evening primrose oil",
+      "squalane",
+      "linoleic acid"
+    ],
+    "description": "Overnight restorative facial oil that renews skin while you sleep.",
+    "fragrance_free": false,
+    "alcohol_free": true,
+    "am": false,
+    "pm": true,
+    "url": "https://www.kiehls.com"
+  },
+  {
+    "id": 60,
+    "name": "Revolution Skincare Hyaluronic Acid Serum",
+    "brand": "Revolution Skincare",
+    "type": "Serum",
+    "step": 3,
+    "price": 9.99,
+    "price_tier": "budget",
+    "skin_types": [
+      "all"
+    ],
+    "concerns": [
+      "dehydration",
+      "dryness",
+      "dullness"
+    ],
+    "key_ingredients": [
+      "Hyaluronic Acid",
+      "Vitamin B5"
+    ],
+    "ingredients": [
+      "sodium hyaluronate",
+      "panthenol",
+      "glycerin",
+      "aloe vera"
+    ],
+    "description": "Affordable hyaluronic acid serum delivering instant plumping hydration.",
+    "fragrance_free": true,
+    "alcohol_free": true,
+    "am": true,
+    "pm": true,
+    "url": "https://www.revolutionbeauty.com"
+  }
+]

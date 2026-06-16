@@ -1,0 +1,15 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/drishyasanghavi/**)",
+      "Read(//Users/drishyasanghavi/Downloads/**)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5001/)",
+      "Bash(mkdir -p \"/Users/drishyasanghavi/Cross Cleanse/static/images\" *)",
+      "Bash(# Copy the skincare flatlay image to static *)",
+      "Bash(pkill -f \"python3 app.py\")",
+      "Bash(python3 app.py)",
+      "Bash(sort -t/ -k1)",
+      "Bash(xargs ls -lt)"
+    ]
+  }
+}
