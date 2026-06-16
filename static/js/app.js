@@ -15,9 +15,10 @@ function showSection(name) {
   document.getElementById('section-' + name).classList.add('active');
   window.scrollTo({ top: 0, behavior: 'smooth' });
   if (name === 'catalog') renderCatalog();
-  if (name === 'home') { renderFeatured(); setTimeout(animateCounters, 200); }
-  setTimeout(refreshScrollReveal, 100);
-  setTimeout(initRipples, 100);
+  if (name === 'home') { renderFeatured(); setTimeout(animateCounters, 200); setTimeout(initHeroTypewriter, 400); }
+  if (name === 'results') setTimeout(initTabIndicator, 100);
+  setTimeout(refreshScrollReveal, 80);
+  setTimeout(() => { initRipples(); initCardTilt(); initMagneticButtons(); initGlowRings(); }, 120);
 }
 
 // ── Quiz Progress ──
@@ -398,6 +399,19 @@ function applyCatalogFilters() {
         </div>
       </div>`;
     }).join('');
+
+  // Stagger cards in after render
+  setTimeout(() => {
+    document.querySelectorAll('.catalog-card').forEach((card, i) => {
+      card.style.opacity = '0';
+      card.style.transform = 'translateY(10px)';
+      setTimeout(() => {
+        card.style.transition = 'opacity .3s ease, transform .3s ease';
+        card.style.opacity = '1';
+        card.style.transform = '';
+      }, i * 20);
+    });
+  }, 20);
 }
 
 function toggleFilter(el) {
@@ -538,6 +552,96 @@ function animateCounters() {
   });
 }
 
+// ── Card Tilt (mouse-move 3D effect) ──
+function initCardTilt() {
+  document.querySelectorAll('.ai-card, .how-step, .ai-proof-item').forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const rect = card.getBoundingClientRect();
+      const cx = rect.left + rect.width / 2;
+      const cy = rect.top + rect.height / 2;
+      const dx = (e.clientX - cx) / (rect.width / 2);
+      const dy = (e.clientY - cy) / (rect.height / 2);
+      card.style.transform = `translateY(-5px) rotateX(${-dy * 5}deg) rotateY(${dx * 5}deg)`;
+      card.style.transition = 'transform .05s';
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.transform = '';
+      card.style.transition = 'transform .4s var(--ease-out)';
+    });
+  });
+}
+
+// ── Magnetic Buttons ──
+function initMagneticButtons() {
+  document.querySelectorAll('.btn-primary.btn-large, .btn-glass').forEach(btn => {
+    btn.addEventListener('mousemove', e => {
+      const rect = btn.getBoundingClientRect();
+      const dx = (e.clientX - (rect.left + rect.width / 2)) * 0.25;
+      const dy = (e.clientY - (rect.top + rect.height / 2)) * 0.25;
+      btn.style.transform = `translate(${dx}px, ${dy}px) translateY(-2px)`;
+      btn.style.transition = 'transform .1s';
+    });
+    btn.addEventListener('mouseleave', () => {
+      btn.style.transform = '';
+      btn.style.transition = 'transform .4s var(--ease-out)';
+    });
+  });
+}
+
+// ── Smooth Tab Indicator ──
+function initTabIndicator() {
+  const tabWrap = document.querySelector('.routine-tabs');
+  if (!tabWrap) return;
+  const indicator = document.createElement('div');
+  Object.assign(indicator.style, {
+    position:'absolute', bottom:'4px', left:'4px', height:'calc(100% - 8px)',
+    background:'white', borderRadius:'10px', boxShadow:'0 1px 4px rgba(0,0,0,.08)',
+    transition:'left .25s var(--ease-out), width .25s var(--ease-out)',
+    pointerEvents:'none', zIndex:'0'
+  });
+  tabWrap.style.position = 'relative';
+  tabWrap.prepend(indicator);
+
+  function updateIndicator() {
+    const active = tabWrap.querySelector('.tab-btn.active');
+    if (!active) return;
+    indicator.style.left = active.offsetLeft + 'px';
+    indicator.style.width = active.offsetWidth + 'px';
+  }
+  tabWrap.querySelectorAll('.tab-btn').forEach(btn => {
+    btn.style.position = 'relative'; btn.style.zIndex = '1';
+    btn.addEventListener('click', () => setTimeout(updateIndicator, 10));
+  });
+  setTimeout(updateIndicator, 100);
+}
+
+// ── Hero Text Typewriter ──
+function initHeroTypewriter() {
+  const words = ['your skin.', 'your concerns.', 'your budget.', 'your routine.'];
+  const target = document.querySelector('.hero-title em');
+  if (!target) return;
+  let wi = 0, ci = 0, deleting = false;
+  function tick() {
+    const word = words[wi];
+    if (!deleting) {
+      target.textContent = word.slice(0, ++ci);
+      if (ci === word.length) { deleting = true; return setTimeout(tick, 2800); }
+    } else {
+      target.textContent = word.slice(0, --ci);
+      if (ci === 0) { deleting = false; wi = (wi + 1) % words.length; return setTimeout(tick, 500); }
+    }
+    setTimeout(tick, deleting ? 70 : 110);
+  }
+  target.textContent = '';
+  setTimeout(tick, 1200);
+}
+
+
+// ── Glow rings on cards ──
+function initGlowRings() {
+  document.querySelectorAll('.mini-card, .catalog-card, .product-card').forEach(c => c.classList.add('glow-ring'));
+}
+
 // ── Init ──
 updateProgress(1);
 renderFeatured();
@@ -546,4 +650,9 @@ document.addEventListener('DOMContentLoaded', () => {
   initScrollReveal();
   initRipples();
   animateCounters();
+  initCardTilt();
+  initMagneticButtons();
+  initTabIndicator();
+  initHeroTypewriter();
+  initGlowRings();
 });

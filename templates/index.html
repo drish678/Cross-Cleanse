@@ -46,7 +46,7 @@
         <span class="ai-dot"></span>
         Powered by AI
       </div>
-      <h1 class="hero-title">Skincare that actually<br /><em>knows your skin</em></h1>
+      <h1 class="hero-title">Skincare that actually cares about<br /><em>your skin</em></h1>
       <p class="hero-sub">
         Answer 8 questions. Our AI builds a personalized AM + PM routine,
         flags ingredient conflicts, and recommends products matched to your exact profile — not generic picks.
@@ -80,28 +80,24 @@
       <div class="ai-grid stagger">
         <div class="ai-card">
           <div class="ai-card-num">01</div>
-          <div class="ai-card-icon">📋</div>
           <h3>Profile Builder</h3>
           <p>Understands your skin type, concerns, lifestyle, and sensitivities through a focused 8-question quiz — no lengthy intake form required.</p>
           <div class="ai-card-tag">Onboarding Quiz</div>
         </div>
         <div class="ai-card">
           <div class="ai-card-num">02</div>
-          <div class="ai-card-icon">🧴</div>
           <h3>Catalog Recommender</h3>
           <p>Matches products from a curated database to your profile using ingredient analysis and concern scoring — never generic top-10 lists.</p>
           <div class="ai-card-tag">Ingredient Matching</div>
         </div>
         <div class="ai-card ai-card-highlight">
           <div class="ai-card-num">03</div>
-          <div class="ai-card-icon">⚠️</div>
           <h3>Conflict Detector</h3>
           <p>Flags ingredient combinations you should never use together — like retinol + AHA/BHA on the same night — before they wreck your skin barrier.</p>
           <div class="ai-card-tag">The Real Differentiator</div>
         </div>
         <div class="ai-card">
           <div class="ai-card-num">04</div>
-          <div class="ai-card-icon">🌅</div>
           <h3>Routine Generator</h3>
           <p>Sequences your products into a clear AM + PM routine with a one-sentence explanation for each pick, so you always know the why.</p>
           <div class="ai-card-tag">Full Routine Output</div>
@@ -114,9 +110,7 @@
   <div class="ai-statement-section">
     <div class="ai-statement-inner">
       <div class="ai-statement-badge reveal">
-        <span class="ai-spark">✦</span>
         AI-Powered Recommendation Engine
-        <span class="ai-spark">✦</span>
       </div>
       <h2 class="ai-statement-title reveal">This isn't a quiz that leads to a product grid.</h2>
       <p class="ai-statement-body reveal">
@@ -126,22 +120,18 @@
       </p>
       <div class="ai-proof-grid stagger">
         <div class="ai-proof-item">
-          <div class="ai-proof-icon">🔬</div>
           <strong>Ingredient Analysis</strong>
           <span>Products scored against your profile using cosine similarity on ingredient profiles</span>
         </div>
         <div class="ai-proof-item">
-          <div class="ai-proof-icon">🛡️</div>
           <strong>Conflict Protection</strong>
           <span>4 conflict rule sets covering retinoids, acids, vitamin C, and benzoyl peroxide interactions</span>
         </div>
         <div class="ai-proof-item">
-          <div class="ai-proof-icon">🎯</div>
           <strong>Concern Matching</strong>
           <span>Prioritizes products targeting your top 3 concerns, weighted by your skin type and budget</span>
         </div>
         <div class="ai-proof-item">
-          <div class="ai-proof-icon">📅</div>
           <strong>Routine Sequencing</strong>
           <span>Correct application order: cleanse → tone → treat → eye → moisturise → protect</span>
         </div>
@@ -228,24 +218,23 @@
 
     <!-- Step 1 -->
     <div class="quiz-step active" id="step-1">
-      <div class="step-emoji">🪞</div>
       <h2 class="quiz-question">What's your skin type?</h2>
       <p class="quiz-hint">Select up to 3 that apply — skin can be multiple things at once.</p>
       <div class="option-grid multi">
         <button class="option-card" data-field="skin_types" data-value="dry" onclick="toggleSkinType(this)">
-          <span class="option-icon">🏜️</span><strong>Dry</strong><small>Tight, flaky, or rough. Always needs moisture.</small>
+          <strong>Dry</strong><small>Tight, flaky, or rough. Always needs moisture.</small>
         </button>
         <button class="option-card" data-field="skin_types" data-value="oily" onclick="toggleSkinType(this)">
-          <span class="option-icon">✨</span><strong>Oily</strong><small>Shiny all over. Prone to breakouts.</small>
+          <strong>Oily</strong><small>Shiny all over. Prone to breakouts.</small>
         </button>
         <button class="option-card" data-field="skin_types" data-value="combination" onclick="toggleSkinType(this)">
-          <span class="option-icon">☯️</span><strong>Combination</strong><small>Oily T-zone, dry or normal cheeks.</small>
+          <strong>Combination</strong><small>Oily T-zone, dry or normal cheeks.</small>
         </button>
         <button class="option-card" data-field="skin_types" data-value="normal" onclick="toggleSkinType(this)">
-          <span class="option-icon">🌸</span><strong>Normal</strong><small>Balanced — not too oily, not too dry.</small>
+          <strong>Normal</strong><small>Balanced — not too oily, not too dry.</small>
         </button>
         <button class="option-card" data-field="skin_types" data-value="sensitive" onclick="toggleSkinType(this)">
-          <span class="option-icon">🌷</span><strong>Sensitive</strong><small>Reacts easily — redness, stinging, itching.</small>
+          <strong>Sensitive</strong><small>Reacts easily — redness, stinging, itching.</small>
         </button>
       </div>
       <button class="btn-primary step-next" onclick="nextStep(1)">Continue →</button>
@@ -253,36 +242,34 @@
 
     <!-- Step 2 -->
     <div class="quiz-step" id="step-2">
-      <div class="step-emoji">🎯</div>
       <h2 class="quiz-question">What are your main skin concerns?</h2>
       <p class="quiz-hint">Pick up to 3. We'll prioritize these when building your routine.</p>
       <div class="option-grid multi">
-        <button class="option-card" data-field="concerns" data-value="acne" onclick="toggleOption(this)"><span class="option-icon">🔴</span><strong>Acne & Blemishes</strong><small>Active breakouts or blemish-prone skin.</small></button>
-        <button class="option-card" data-field="concerns" data-value="aging" onclick="toggleOption(this)"><span class="option-icon">⏳</span><strong>Anti-Aging</strong><small>Fine lines, wrinkles, loss of firmness.</small></button>
-        <button class="option-card" data-field="concerns" data-value="hyperpigmentation" onclick="toggleOption(this)"><span class="option-icon">🎨</span><strong>Dark Spots</strong><small>Hyperpigmentation, melasma, uneven tone.</small></button>
-        <button class="option-card" data-field="concerns" data-value="dryness" onclick="toggleOption(this)"><span class="option-icon">💧</span><strong>Dryness</strong><small>Tight feeling, flaking, or dull plumpness.</small></button>
-        <button class="option-card" data-field="concerns" data-value="redness" onclick="toggleOption(this)"><span class="option-icon">🌹</span><strong>Redness</strong><small>Flushing, rosacea, or reactive skin.</small></button>
-        <button class="option-card" data-field="concerns" data-value="pores" onclick="toggleOption(this)"><span class="option-icon">🔬</span><strong>Large Pores</strong><small>Visible pores, especially nose and cheeks.</small></button>
-        <button class="option-card" data-field="concerns" data-value="dullness" onclick="toggleOption(this)"><span class="option-icon">💡</span><strong>Dullness</strong><small>Lack of glow or rough, tired-looking skin.</small></button>
-        <button class="option-card" data-field="concerns" data-value="dark circles" onclick="toggleOption(this)"><span class="option-icon">👁️</span><strong>Dark Circles</strong><small>Under-eye darkness or puffiness.</small></button>
+        <button class="option-card" data-field="concerns" data-value="acne" onclick="toggleOption(this)"><strong>Acne & Blemishes</strong><small>Active breakouts or blemish-prone skin.</small></button>
+        <button class="option-card" data-field="concerns" data-value="aging" onclick="toggleOption(this)"><strong>Anti-Aging</strong><small>Fine lines, wrinkles, loss of firmness.</small></button>
+        <button class="option-card" data-field="concerns" data-value="hyperpigmentation" onclick="toggleOption(this)"><strong>Dark Spots</strong><small>Hyperpigmentation, melasma, uneven tone.</small></button>
+        <button class="option-card" data-field="concerns" data-value="dryness" onclick="toggleOption(this)"><strong>Dryness</strong><small>Tight feeling, flaking, or dull plumpness.</small></button>
+        <button class="option-card" data-field="concerns" data-value="redness" onclick="toggleOption(this)"><strong>Redness</strong><small>Flushing, rosacea, or reactive skin.</small></button>
+        <button class="option-card" data-field="concerns" data-value="pores" onclick="toggleOption(this)"><strong>Large Pores</strong><small>Visible pores, especially nose and cheeks.</small></button>
+        <button class="option-card" data-field="concerns" data-value="dullness" onclick="toggleOption(this)"><strong>Dullness</strong><small>Lack of glow or rough, tired-looking skin.</small></button>
+        <button class="option-card" data-field="concerns" data-value="dark circles" onclick="toggleOption(this)"><strong>Dark Circles</strong><small>Under-eye darkness or puffiness.</small></button>
       </div>
       <button class="btn-primary step-next" onclick="nextStep(2)">Continue →</button>
     </div>
 
     <!-- Step 3 -->
     <div class="quiz-step" id="step-3">
-      <div class="step-emoji">💚</div>
       <h2 class="quiz-question">What's your skincare budget?</h2>
       <p class="quiz-hint">Great skin doesn't have to be expensive — we have options across all ranges.</p>
       <div class="option-grid">
         <button class="option-card" data-field="budget" data-value="budget" onclick="selectOption(this)">
-          <span class="option-icon">🌱</span><strong>Budget-Friendly</strong><small>Under $20/product. CeraVe, The Ordinary, The Inkey List.</small>
+          <strong>Budget-Friendly</strong><small>Under $20/product. CeraVe, The Ordinary, The Inkey List.</small>
         </button>
         <button class="option-card" data-field="budget" data-value="mid" onclick="selectOption(this)">
-          <span class="option-icon">🌿</span><strong>Mid-Range</strong><small>$20–$60/product. Paula's Choice, Cosrx, Pixi.</small>
+          <strong>Mid-Range</strong><small>$20–$60/product. Paula's Choice, Cosrx, Pixi.</small>
         </button>
         <button class="option-card" data-field="budget" data-value="luxury" onclick="selectOption(this)">
-          <span class="option-icon">🌳</span><strong>Luxury</strong><small>$60+/product. Skinceuticals, Estée Lauder, Elemis.</small>
+          <strong>Luxury</strong><small>$60+/product. Skinceuticals, Estée Lauder, Elemis.</small>
         </button>
       </div>
       <button class="btn-primary step-next" onclick="nextStep(3)">Continue →</button>
@@ -290,18 +277,17 @@
 
     <!-- Step 4 -->
     <div class="quiz-step" id="step-4">
-      <div class="step-emoji">🛡️</div>
       <h2 class="quiz-question">Any ingredient preferences?</h2>
       <p class="quiz-hint">We'll filter out products that don't meet your requirements.</p>
       <div class="option-grid multi">
         <button class="option-card" data-field="sensitivities" data-value="fragrance_free" onclick="toggleOption(this)">
-          <span class="option-icon">🚫</span><strong>Fragrance-Free</strong><small>Avoid all added fragrances and essential oils.</small>
+          <strong>Fragrance-Free</strong><small>Avoid all added fragrances and essential oils.</small>
         </button>
         <button class="option-card" data-field="sensitivities" data-value="alcohol_free" onclick="toggleOption(this)">
-          <span class="option-icon">❌</span><strong>Alcohol-Free</strong><small>Avoid drying alcohols (denatured, SD alcohol).</small>
+          <strong>Alcohol-Free</strong><small>Avoid drying alcohols (denatured, SD alcohol).</small>
         </button>
         <button class="option-card selected" data-field="sensitivities" data-value="none" onclick="selectSensitivity(this)" id="sensitivityNone">
-          <span class="option-icon">✅</span><strong>No restrictions</strong><small>I tolerate most ingredients well.</small>
+          <strong>No restrictions</strong><small>I tolerate most ingredients well.</small>
         </button>
       </div>
       <button class="btn-primary step-next" onclick="nextStep(4)">Continue →</button>
@@ -309,18 +295,17 @@
 
     <!-- Step 5 -->
     <div class="quiz-step" id="step-5">
-      <div class="step-emoji">📚</div>
       <h2 class="quiz-question">How experienced are you with skincare?</h2>
       <p class="quiz-hint">This helps us calibrate ingredient strength and routine complexity.</p>
       <div class="option-grid">
         <button class="option-card" data-field="experience" data-value="beginner" onclick="selectOption(this)">
-          <span class="option-icon">🌱</span><strong>Beginner</strong><small>New to skincare — I want simple, foolproof routines.</small>
+          <strong>Beginner</strong><small>New to skincare — I want simple, foolproof routines.</small>
         </button>
         <button class="option-card" data-field="experience" data-value="intermediate" onclick="selectOption(this)">
-          <span class="option-icon">🌿</span><strong>Some experience</strong><small>I have a basic routine and am ready to add actives.</small>
+          <strong>Some experience</strong><small>I have a basic routine and am ready to add actives.</small>
         </button>
         <button class="option-card" data-field="experience" data-value="advanced" onclick="selectOption(this)">
-          <span class="option-icon">🌳</span><strong>Experienced</strong><small>I know my ingredients and want targeted recommendations.</small>
+          <strong>Experienced</strong><small>I know my ingredients and want targeted recommendations.</small>
         </button>
       </div>
       <button class="btn-primary step-next" onclick="nextStep(5)">Continue →</button>
@@ -328,17 +313,16 @@
 
     <!-- Step 6 -->
     <div class="quiz-step" id="step-6">
-      <div class="step-emoji">🔍</div>
       <h2 class="quiz-question">Do you currently use any actives?</h2>
       <p class="quiz-hint">We'll use this for conflict detection — flagging combinations you should avoid.</p>
       <div class="option-grid multi">
-        <button class="option-card" data-field="existing_actives" data-value="retinol" onclick="toggleOption(this)"><span class="option-icon">🔴</span><strong>Retinol / Retinoids</strong><small>Any vitamin A derivative.</small></button>
-        <button class="option-card" data-field="existing_actives" data-value="vitamin_c" onclick="toggleOption(this)"><span class="option-icon">🟡</span><strong>Vitamin C</strong><small>Ascorbic acid or C derivatives.</small></button>
-        <button class="option-card" data-field="existing_actives" data-value="aha_bha" onclick="toggleOption(this)"><span class="option-icon">🟠</span><strong>AHAs or BHAs</strong><small>Glycolic, lactic, mandelic, or salicylic acid.</small></button>
-        <button class="option-card" data-field="existing_actives" data-value="benzoyl_peroxide" onclick="toggleOption(this)"><span class="option-icon">⚪</span><strong>Benzoyl Peroxide</strong><small>Common in acne treatments.</small></button>
-        <button class="option-card" data-field="existing_actives" data-value="none_actives" onclick="toggleOption(this)"><span class="option-icon">✅</span><strong>None yet</strong><small>I haven't added actives to my routine.</small></button>
+        <button class="option-card" data-field="existing_actives" data-value="retinol" onclick="toggleOption(this)"><strong>Retinol / Retinoids</strong><small>Any vitamin A derivative.</small></button>
+        <button class="option-card" data-field="existing_actives" data-value="vitamin_c" onclick="toggleOption(this)"><strong>Vitamin C</strong><small>Ascorbic acid or C derivatives.</small></button>
+        <button class="option-card" data-field="existing_actives" data-value="aha_bha" onclick="toggleOption(this)"><strong>AHAs or BHAs</strong><small>Glycolic, lactic, mandelic, or salicylic acid.</small></button>
+        <button class="option-card" data-field="existing_actives" data-value="benzoyl_peroxide" onclick="toggleOption(this)"><strong>Benzoyl Peroxide</strong><small>Common in acne treatments.</small></button>
+        <button class="option-card" data-field="existing_actives" data-value="none_actives" onclick="toggleOption(this)"><strong>None yet</strong><small>I haven't added actives to my routine.</small></button>
       </div>
-      <button class="btn-primary" onclick="submitQuiz()">Build My AI Routine ✦</button>
+      <button class="btn-primary" onclick="submitQuiz()">Build My AI Routine</button>
     </div>
   </div>
 </section>
@@ -361,9 +345,9 @@
     <div id="conflicts-section" class="conflicts-section hidden"></div>
 
     <div class="routine-tabs">
-      <button class="tab-btn active" id="tab-btn-am" onclick="showTab('am', this)">🌅 Morning</button>
-      <button class="tab-btn" id="tab-btn-pm" onclick="showTab('pm', this)">🌙 Evening</button>
-      <button class="tab-btn" id="tab-btn-weekly" onclick="showTab('weekly', this)">📅 Weekly</button>
+      <button class="tab-btn active" id="tab-btn-am" onclick="showTab('am', this)">Morning</button>
+      <button class="tab-btn" id="tab-btn-pm" onclick="showTab('pm', this)">Evening</button>
+      <button class="tab-btn" id="tab-btn-weekly" onclick="showTab('weekly', this)">Weekly</button>
     </div>
 
     <div id="tab-am" class="tab-content active">
@@ -385,7 +369,6 @@
     </div>
 
     <div class="confidence-card">
-      <div class="confidence-icon">💬</div>
       <h3>Feel confident about your routine?</h3>
       <p>Rate how confident you feel — this helps us improve the AI recommendations.</p>
       <div class="confidence-rating">

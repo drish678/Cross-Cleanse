@@ -9,7 +9,8 @@
       "Bash(pkill -f \"python3 app.py\")",
       "Bash(python3 app.py)",
       "Bash(sort -t/ -k1)",
-      "Bash(xargs ls -lt)"
+      "Bash(xargs ls -lt)",
+      "mcp__Claude_Preview__preview_start"
     ]
   }
 }

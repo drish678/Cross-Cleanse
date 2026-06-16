@@ -5,7 +5,8 @@
       "name": "cross-cleanse",
       "runtimeExecutable": "python3",
       "runtimeArgs": ["app.py"],
-      "port": 5001
+      "port": 5001,
+      "autoPort": false
     }
   ]
 }
